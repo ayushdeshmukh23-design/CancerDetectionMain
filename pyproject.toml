@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breast-cancer-detection"
+version = "0.1.0"
+description = "OncoVision AI Streamlit multi-modal breast cancer detection app"
+readme = "breast_cancer_detection/README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit>=1.32.0",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["breast_cancer_detection*"]
+
+[project.scripts]
+oncovision-init = "breast_cancer_detection.setup:main"
+

@@ -1,0 +1,787 @@
+2026-04-09 21:02:19,479 | dataset_loader | INFO | Discovered samples: 119
+2026-04-09 21:02:19,487 | dataset_loader | INFO | Class counts: {'benign': 84, 'malignant': 35}
+2026-04-09 21:02:19,488 | dataset_loader | INFO | Image samples: 119 | Thermal samples: 0
+2026-04-09 21:07:38,079 | dataset_loader | INFO | Discovered samples: 119
+2026-04-09 21:07:38,091 | dataset_loader | INFO | Class counts: {'benign': 84, 'malignant': 35}
+2026-04-09 21:07:38,092 | dataset_loader | INFO | Image samples: 119 | Thermal samples: 0
+2026-04-09 21:10:18,023 | dataset_loader | INFO | Discovered samples: 866
+2026-04-09 21:10:18,026 | dataset_loader | INFO | Class counts: {'malignant': 782, 'benign': 84}
+2026-04-09 21:10:18,041 | dataset_loader | INFO | Image samples: 859 | Thermal samples: 747
+2026-04-09 21:12:12,762 | dataset_loader | INFO | Discovered samples: 1247
+2026-04-09 21:12:12,765 | dataset_loader | INFO | Class counts: {'malignant': 782, 'normal': 381, 'benign': 84}
+2026-04-09 21:12:12,766 | dataset_loader | INFO | Image samples: 1240 | Thermal samples: 1128
+2026-04-09 21:14:29,402 | dataset_loader | INFO | Discovered samples: 1247
+2026-04-09 21:14:29,405 | dataset_loader | INFO | Class counts: {'malignant': 782, 'normal': 381, 'benign': 84}
+2026-04-09 21:14:29,407 | dataset_loader | INFO | Image samples: 1240 | Thermal samples: 1128
+2026-04-09 21:18:06,569 | dataset_loader | INFO | Discovered samples: 1247
+2026-04-09 21:18:06,573 | dataset_loader | INFO | Class counts: {'malignant': 782, 'normal': 381, 'benign': 84}
+2026-04-09 21:18:06,574 | dataset_loader | INFO | Image samples: 1240 | Thermal samples: 1128
+2026-04-09 21:21:37,747 | dataset_loader | INFO | Discovered samples: 1247
+2026-04-09 21:21:37,750 | dataset_loader | INFO | Class counts: {'malignant': 782, 'normal': 381, 'benign': 84}
+2026-04-09 21:21:37,751 | dataset_loader | INFO | Image samples: 1240 | Thermal samples: 1128
+2026-04-09 21:26:05,783 | dataset_loader | INFO | Discovered samples: 1247
+2026-04-09 21:26:05,786 | dataset_loader | INFO | Class counts: {'malignant': 782, 'normal': 381, 'benign': 84}
+2026-04-09 21:26:05,788 | dataset_loader | INFO | Image samples: 1240 | Thermal samples: 1128
+2026-04-09 22:26:44,058 | train_segmentation | INFO | epoch=1 seg_loss=0.2580
+2026-04-09 22:32:23,784 | train_segmentation | INFO | epoch=1 seg_loss=0.2624
+2026-04-09 23:33:25,336 | train_segmentation | INFO | epoch=2 seg_loss=0.1139
+2026-04-09 23:40:31,946 | train_segmentation | INFO | epoch=2 seg_loss=0.1228
+2026-04-09 23:47:12,744 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-09 23:47:26,734 | image_analyzer_agent | ERROR | Agent feature_extractor_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-09 23:47:34,738 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-09 23:47:34,749 | image_analyzer_agent | ERROR | Agent explainability_node failed: 'NoneType' object has no attribute 'get'
+2026-04-09 23:47:34,750 | image_analyzer_agent | ERROR | Agent report_generator_node failed: 'NoneType' object has no attribute 'get'
+2026-04-10 00:00:42,725 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:00:51,654 | image_analyzer_agent | ERROR | Agent feature_extractor_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-10 00:01:02,910 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-10 00:01:02,939 | image_analyzer_agent | ERROR | Agent explainability_node failed: 'NoneType' object has no attribute 'get'
+2026-04-10 00:01:02,946 | image_analyzer_agent | ERROR | Agent report_generator_node failed: 'NoneType' object has no attribute 'get'
+2026-04-10 00:02:18,692 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:02:28,333 | image_analyzer_agent | ERROR | Agent feature_extractor_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-10 00:02:34,536 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: Error(s) in loading state_dict for ConvAutoencoder:
+	Missing key(s) in state_dict: "encoder.0.weight", "encoder.0.bias", "encoder.2.weight", "encoder.2.bias", "encoder.4.weight", "encoder.4.bias", "encoder.6.weight", "encoder.6.bias", "bottleneck.weight", "bottleneck.bias", "expand.weight", "expand.bias", "decoder.0.weight", "decoder.0.bias", "decoder.2.weight", "decoder.2.bias", "decoder.4.weight", "decoder.4.bias", "decoder.6.weight", "decoder.6.bias". 
+	Unexpected key(s) in state_dict: "enc.0.weight", "enc.0.bias", "enc.2.weight", "enc.2.bias", "enc.4.weight", "enc.4.bias", "enc.6.weight", "enc.6.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "dec.0.weight", "dec.0.bias", "dec.2.weight", "dec.2.bias", "dec.4.weight", "dec.4.bias", "dec.6.weight", "dec.6.bias". 
+2026-04-10 00:02:34,545 | image_analyzer_agent | ERROR | Agent explainability_node failed: 'NoneType' object has no attribute 'get'
+2026-04-10 00:02:34,547 | image_analyzer_agent | ERROR | Agent report_generator_node failed: 'NoneType' object has no attribute 'get'
+2026-04-10 00:12:30,138 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:12:36,437 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:12:43,176 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:12:43,201 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:12:52,705 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: only integer scalar arrays can be converted to a scalar index
+2026-04-10 00:16:40,946 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:16:47,082 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:17:07,170 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:17:07,232 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:17:21,686 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: only integer scalar arrays can be converted to a scalar index
+2026-04-10 00:18:02,171 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:18:07,176 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:18:18,823 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:18:18,855 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:18:31,783 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: only integer scalar arrays can be converted to a scalar index
+2026-04-10 00:20:28,491 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:20:38,125 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:21:14,481 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:21:14,498 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:21:43,571 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: only integer scalar arrays can be converted to a scalar index
+2026-04-10 00:26:20,289 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:26:20,300 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 00:28:27,527 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 00:28:27,537 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:02:34,881 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:02:39,128 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:02:45,085 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:02:45,093 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:09:17,848 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:09:22,007 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:09:27,840 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:09:27,849 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:36:18,594 | model_loader | INFO | Model manifest, runtime versions, and checksums validated.
+2026-04-10 09:36:19,832 | model_loader | INFO | Model manifest, runtime versions, and checksums validated.
+2026-04-10 09:36:23,628 | predictor | ERROR | Thermal model is incompatible with runtime; continuing without thermal branch. xgboost_thermal.pkl is incompatible with current scikit-learn runtime. Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+2026-04-10 09:38:18,939 | model_loader | INFO | Model manifest, runtime versions, and checksums validated.
+2026-04-10 09:38:22,811 | predictor | ERROR | Thermal model is incompatible with runtime; continuing without thermal branch. xgboost_thermal.pkl is incompatible with current scikit-learn runtime. Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+2026-04-10 09:38:24,574 | predictor | INFO | Starting predictor inference
+2026-04-10 09:38:24,574 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:38:27,871 | predictor | INFO | Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+2026-04-10 09:40:17,283 | model_loader | INFO | Model manifest, runtime versions, and checksums validated.
+2026-04-10 09:40:21,121 | predictor | ERROR | Thermal model is incompatible with runtime; continuing without thermal branch. xgboost_thermal.pkl is incompatible with current scikit-learn runtime.
+2026-04-10 09:40:22,907 | predictor | INFO | Starting predictor inference
+2026-04-10 09:40:22,907 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:40:26,030 | predictor | INFO | Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+2026-04-10 09:45:13,916 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:45:17,530 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:45:17,905 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: scikit-learn runtime (1.6.1) != expected (1.8.0).
+2026-04-10 09:47:07,676 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:47:12,898 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:47:13,690 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: scikit-learn runtime (1.6.1) != expected (1.8.0).
+2026-04-10 09:51:56,339 | model_loader | INFO | Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+2026-04-10 09:51:57,346 | model_loader | WARNING | Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+2026-04-10 09:51:57,685 | model_loader | INFO | Autoencoder model loaded successfully: autoencoder.pth
+2026-04-10 09:52:02,513 | model_loader | INFO | Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+2026-04-10 09:52:02,514 | predictor | INFO | Runtime versions | torch=2.11.0+cpu
+2026-04-10 09:52:06,597 | model_loader | WARNING | Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+2026-04-10 09:52:06,941 | model_loader | INFO | Autoencoder model loaded successfully: autoencoder.pth
+2026-04-10 09:52:08,647 | predictor | INFO | Starting predictor inference
+2026-04-10 09:52:08,647 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:52:11,872 | predictor | INFO | Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+2026-04-10 09:54:36,271 | preprocessor | INFO | Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+2026-04-10 09:54:39,760 | feature_extractor | WARNING | Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+2026-04-10 09:54:40,128 | image_analyzer_agent | ERROR | Agent diagnosis_node failed: torch runtime (2.10.0+cpu) does not match expected prefix (2.11).
+[2026-04-10 10:01:58,174] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:01:58,473] [INFO] [model_loader] Autoencoder load started | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:01:58,532] [INFO] [model_loader] Legacy autoencoder keys detected; applying explicit remap.
+[2026-04-10 10:01:58,554] [INFO] [model_loader] Autoencoder load successful | path=autoencoder.pth
+[2026-04-10 10:01:59,458] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:02:02,534] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:02:02,535] [INFO] [predictor] Runtime versions | torch=2.11.0+cpu
+[2026-04-10 10:02:06,337] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:02:06,558] [INFO] [model_loader] Autoencoder load started | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:02:06,597] [INFO] [model_loader] Legacy autoencoder keys detected; applying explicit remap.
+[2026-04-10 10:02:06,615] [INFO] [model_loader] Autoencoder load successful | path=autoencoder.pth
+[2026-04-10 10:02:08,076] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:02:08,077] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:02:11,204] [INFO] [predictor] Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+[2026-04-10 10:03:36,460] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:04:07,733] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:04:11,220] [WARNING] [feature_extractor] Loaded autoencoder with legacy key remapping (enc/dec/fc -> encoder/decoder/bottleneck/expand).
+[2026-04-10 10:04:11,622] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: torch runtime (2.10.0+cpu) does not match expected prefix (2.11).
+[2026-04-10 10:04:13,056] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:04:16,211] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:04:21,133] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:10:28,659] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:10:28,934] [INFO] [verify] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:10:29,039] [INFO] [verify] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:10:34,231] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:10:34,231] [INFO] [predictor] Runtime versions | torch=2.11.0+cpu
+[2026-04-10 10:10:38,163] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:10:38,404] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:10:38,476] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:10:40,123] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:10:40,124] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:10:43,469] [INFO] [predictor] Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+[2026-04-10 10:11:53,756] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:12:29,362] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:12:33,093] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:12:33,180] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:12:33,622] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: torch runtime (2.10.0+cpu) does not match expected prefix (2.11).
+[2026-04-10 10:12:35,072] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:12:37,784] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:12:39,726] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:12:59,357] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:13:01,435] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:13:03,379] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:15:35,714] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 10:15:40,980] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:15:45,986] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:15:46,074] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:15:46,519] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: torch runtime (2.10.0+cpu) does not match expected prefix (2.11).
+[2026-04-10 10:15:48,505] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:15:51,815] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:15:53,270] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:15:54,087] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:15:54,296] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 10:15:55,729] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:15:57,774] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:16:23,332] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 10:16:51,944] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:16:54,300] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:16:56,348] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:16:58,327] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 10:17:53,026] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:17:57,058] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:17:57,149] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:17:57,635] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: torch runtime (2.10.0+cpu) does not match expected prefix (2.11).
+[2026-04-10 10:17:59,425] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:18:01,577] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:18:04,094] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+[2026-04-10 10:22:25,006] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:22:28,519] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:22:28,519] [INFO] [predictor] Runtime versions | torch=2.11.0+cpu
+[2026-04-10 10:22:32,792] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:22:33,109] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:22:33,185] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:22:34,915] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:22:34,915] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:22:38,625] [INFO] [predictor] Predictor inference complete | prediction=Normal confidence=0.5438 risk_score=35.05
+[2026-04-10 10:23:55,884] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:24:31,396] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:24:35,211] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:24:35,293] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:24:36,632] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:24:36,633] [INFO] [predictor] Runtime versions | torch=2.10.0+cpu
+[2026-04-10 10:24:40,632] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:24:40,894] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:24:40,963] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:24:42,695] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:24:42,696] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\.uploads\Screenshot 2026-04-09 234643.png
+[2026-04-10 10:26:24,623] [INFO] [predictor] Predictor inference complete | prediction=Malignant confidence=0.6692 risk_score=66.92
+[2026-04-10 10:26:26,010] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:29:39,572] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 10:35:17,652] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:45:14,306] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:46:18,493] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7858277e-c8a5-4d1a-8927-1e096dfaecf6_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 10:46:37,280] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_421cfbd0-38c3-48b2-9626-fb2df289a2c0_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 10:46:37,883] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_421cfbd0-38c3-48b2-9626-fb2df289a2c0_Screenshot2026-04-09234643.png
+[2026-04-10 10:46:41,374] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:46:41,453] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:46:42,772] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:46:42,772] [INFO] [predictor] Runtime versions | torch=2.10.0+cpu
+[2026-04-10 10:46:46,658] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:46:46,890] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:46:46,954] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:46:48,535] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:46:48,536] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_421cfbd0-38c3-48b2-9626-fb2df289a2c0_Screenshot2026-04-09234643.png
+[2026-04-10 10:48:31,562] [INFO] [predictor] Predictor inference complete | prediction=Malignant confidence=0.6692 risk_score=66.92
+[2026-04-10 10:48:33,042] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:50:02,175] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c3ea00cd-5a9c-4f42-b179-acb233aec797_chat_history.txt size=0
+[2026-04-10 10:50:39,914] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\cb92d73c-c105-430a-94f8-efd0ffbc85b7_chat_history.txt size=31
+[2026-04-10 10:50:40,922] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:54:26,975] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 10:54:56,216] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2d7689ea-adde-4ce5-8e88-17d630ffb8b4_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 10:55:03,610] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_584691a5-a221-4da7-a047-662e19fd4e06_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 10:55:04,047] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_584691a5-a221-4da7-a047-662e19fd4e06_Screenshot2026-04-09234643.png
+[2026-04-10 10:55:04,049] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b25f50f7-65d6-4e81-88a0-a6d8faf78c10_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 10:55:08,560] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:55:08,669] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:55:10,100] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 10:55:10,100] [INFO] [predictor] Runtime versions | torch=2.10.0+cpu
+[2026-04-10 10:55:14,533] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 10:55:14,781] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 10:55:14,853] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 10:55:16,436] [INFO] [predictor] Starting predictor inference
+[2026-04-10 10:55:16,437] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_584691a5-a221-4da7-a047-662e19fd4e06_Screenshot2026-04-09234643.png
+[2026-04-10 10:57:00,065] [INFO] [predictor] Predictor inference complete | prediction=Malignant confidence=0.6692 risk_score=66.92
+[2026-04-10 10:57:01,371] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 10:59:57,182] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 11:03:19,158] [ERROR] [asyncio] Task exception was never retrieved
+future: <Task finished name='Task-2160' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py:1111> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1113, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1115, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+[2026-04-10 11:04:02,042] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 11:04:24,462] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_357bca39-c537-47d9-8208-30301221f35f_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 11:04:29,830] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2c0912bc-d0e8-4118-8d46-ed58d4422f7a_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 11:04:30,295] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_723c76c4-9b9c-4dca-9247-bc1edda34e4f_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 11:04:30,304] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2c0912bc-d0e8-4118-8d46-ed58d4422f7a_Screenshot2026-04-09234643.png
+[2026-04-10 11:04:34,660] [INFO] [feature_extractor] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 11:04:34,747] [INFO] [feature_extractor] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 11:04:36,104] [INFO] [model_loader] Model preflight passed | model_version=v1 sklearn=1.8.0 torch=2.11
+[2026-04-10 11:04:36,105] [INFO] [predictor] Runtime versions | torch=2.10.0+cpu
+[2026-04-10 11:04:40,018] [INFO] [model_loader] Skipping incompatible sklearn model xgboost_thermal.pkl for this runtime.
+[2026-04-10 11:04:40,268] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 11:04:40,332] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 11:04:41,917] [INFO] [predictor] Starting predictor inference
+[2026-04-10 11:04:41,918] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2c0912bc-d0e8-4118-8d46-ed58d4422f7a_Screenshot2026-04-09234643.png
+[2026-04-10 11:06:25,885] [INFO] [predictor] Predictor inference complete | prediction=Malignant confidence=0.6692 risk_score=66.92
+[2026-04-10 11:06:27,178] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 11:07:02,966] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ff98d53f-de9f-439a-8dcd-760e38536c32_chat_history.txt size=0
+[2026-04-10 11:07:51,873] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ca76dc2a-5420-4ed5-8c90-0a9ae9ef0683_chat_history.txt size=31
+[2026-04-10 11:07:53,546] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 11:08:34,125] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ce6a7b6c-4596-49ff-8d4b-d70ca8f76b17_oncovision_report.md size=295
+[2026-04-10 11:08:34,150] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\0d9764f3-2770-4069-947d-91619933f8c9_oncovision_report.pdf size=1598
+[2026-04-10 11:09:05,156] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\bc593486-98fc-42b1-9ba8-0af0c24b23a8_chat_history.txt size=63
+[2026-04-10 11:09:06,830] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 11:09:16,618] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 11:09:35,015] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 11:09:54,917] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:01:54,037] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 14:02:31,210] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_9d662feb-a316-47d2-a0e4-718696b192db_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:02:40,398] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dac302a6-ef8a-4d43-bb4d-5a0cac9fbaee_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:02:40,792] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dac302a6-ef8a-4d43-bb4d-5a0cac9fbaee_Screenshot2026-04-09234643.png
+[2026-04-10 14:02:40,793] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_76fa17ed-2fe5-4daf-b032-551dc6c8991c_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:02:43,439] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 14:02:43,439] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=6.6
+[2026-04-10 14:02:43,440] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 14:02:43,782] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 14:02:43,897] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 14:02:43,897] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 14:02:45,190] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 14:02:46,157] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 14:02:48,014] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 14:02:48,253] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 14:02:48,260] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 14:02:48,266] [INFO] [predictor] PREDICTION start
+[2026-04-10 14:02:48,266] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dac302a6-ef8a-4d43-bb4d-5a0cac9fbaee_Screenshot2026-04-09234643.png
+[2026-04-10 14:02:48,266] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dac302a6-ef8a-4d43-bb4d-5a0cac9fbaee_Screenshot2026-04-09234643.png
+[2026-04-10 14:02:50,534] [INFO] [predictor] PREPROCESS done | latency_ms=2268.4
+[2026-04-10 14:02:50,535] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 14:02:51,203] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=668.6
+[2026-04-10 14:03:08,539] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=20273.3
+[2026-04-10 14:03:09,760] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:04:39,568] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\413bf2dc-7916-4b92-a3b1-dacc6f24c861_oncovision_report.md size=295
+[2026-04-10 14:04:39,578] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f0a34983-42be-4673-b84b-4a43947ae597_oncovision_report.pdf size=1598
+[2026-04-10 14:07:27,814] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:07:28,978] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:07:48,402] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a0403815-0205-4b04-a7ba-c6a353236029_chat_history.txt size=0
+[2026-04-10 14:08:32,511] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:12:08,396] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 14:12:53,290] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_0b1b3e16-44e8-4f90-890a-330ee6b62916_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:13:00,535] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e087b76c-4614-43fd-968b-cef14344e915_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:13:00,949] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b0c2637a-d3b2-419f-b02e-6f8aef2dbf33_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:13:00,958] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e087b76c-4614-43fd-968b-cef14344e915_Screenshot2026-04-09234643.png
+[2026-04-10 14:13:03,406] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 14:13:03,406] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=8.6
+[2026-04-10 14:13:03,407] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 14:13:03,718] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 14:13:03,853] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 14:13:03,854] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 14:13:05,276] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 14:13:06,627] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 14:13:08,702] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 14:13:08,826] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 14:13:08,833] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 14:13:08,840] [INFO] [predictor] PREDICTION start
+[2026-04-10 14:13:08,840] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e087b76c-4614-43fd-968b-cef14344e915_Screenshot2026-04-09234643.png
+[2026-04-10 14:13:08,840] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e087b76c-4614-43fd-968b-cef14344e915_Screenshot2026-04-09234643.png
+[2026-04-10 14:13:11,138] [INFO] [predictor] PREPROCESS done | latency_ms=2297.6
+[2026-04-10 14:13:11,138] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 14:13:11,460] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=322.1
+[2026-04-10 14:13:28,161] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=19321.5
+[2026-04-10 14:13:29,279] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:14:00,402] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\76b44f47-5c97-4aef-822c-d4fe7cb2aa14_oncovision_report.md size=295
+[2026-04-10 14:14:00,414] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\36b00e1c-8b26-41c6-b3e9-835de6df95e9_oncovision_report.pdf size=1598
+[2026-04-10 14:14:37,762] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\5a7b6d1a-0188-4968-bae4-709592c63341_chat_history.txt size=0
+[2026-04-10 14:14:44,342] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:16:41,006] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:16:42,159] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:16:55,709] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:18:24,298] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:28:04,292] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 14:28:22,981] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_70416e23-43d5-4af3-a972-64c500a091dd_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:28:46,834] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c6afd3bc-3c3a-4b2f-90b9-4ca2cb26b6cb_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:28:47,240] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_f3d05cef-5542-457c-b2f7-900b116988ef_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:28:47,244] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c6afd3bc-3c3a-4b2f-90b9-4ca2cb26b6cb_Screenshot2026-04-09234643.png
+[2026-04-10 14:28:49,624] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 14:28:49,624] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=5.8
+[2026-04-10 14:28:49,624] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 14:28:49,860] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 14:28:49,942] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 14:28:49,943] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 14:28:51,001] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 14:28:51,971] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 14:28:53,655] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 14:28:53,754] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 14:28:53,762] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 14:28:53,768] [INFO] [predictor] PREDICTION start
+[2026-04-10 14:28:53,769] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c6afd3bc-3c3a-4b2f-90b9-4ca2cb26b6cb_Screenshot2026-04-09234643.png
+[2026-04-10 14:28:53,769] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c6afd3bc-3c3a-4b2f-90b9-4ca2cb26b6cb_Screenshot2026-04-09234643.png
+[2026-04-10 14:28:56,086] [INFO] [predictor] PREPROCESS done | latency_ms=2317.0
+[2026-04-10 14:28:56,086] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 14:28:56,476] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=389.4
+[2026-04-10 14:29:12,868] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=19099.5
+[2026-04-10 14:29:13,988] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:32:43,777] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 14:32:58,447] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\82990258-dc10-48f1-b12e-bcf007c2b948_oncovision_report.md size=295
+[2026-04-10 14:32:58,459] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\18daa5fd-2f6b-403b-ab63-6f2e8b8eb4aa_oncovision_report.pdf size=1598
+[2026-04-10 14:33:08,137] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\492f28c7-f4c2-43fd-8063-b559da174e9f_chat_history.txt size=0
+[2026-04-10 14:34:28,066] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\64ce4516-3733-4b95-9040-10e3c6c2d495_chat_history.txt size=31
+[2026-04-10 14:34:29,123] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:34:39,553] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:35:02,089] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7dabc5bf-4be1-4a9f-be9b-46c8af91723b_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:35:08,826] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_412893a4-d4fa-4ce7-a505-8afa2f80ba08_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:35:09,223] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dc313898-9e39-452a-adb2-45753bdcc8e5_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:35:09,227] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_412893a4-d4fa-4ce7-a505-8afa2f80ba08_Screenshot2026-04-09234643.png
+[2026-04-10 14:35:11,719] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 14:35:11,719] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=6.1
+[2026-04-10 14:35:11,720] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 14:35:12,025] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 14:35:12,129] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 14:35:12,130] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 14:35:13,504] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 14:35:14,757] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 14:35:16,624] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 14:35:16,742] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 14:35:16,750] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 14:35:16,756] [INFO] [predictor] PREDICTION start
+[2026-04-10 14:35:16,757] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_412893a4-d4fa-4ce7-a505-8afa2f80ba08_Screenshot2026-04-09234643.png
+[2026-04-10 14:35:16,757] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_412893a4-d4fa-4ce7-a505-8afa2f80ba08_Screenshot2026-04-09234643.png
+[2026-04-10 14:35:19,141] [INFO] [predictor] PREPROCESS done | latency_ms=2384.2
+[2026-04-10 14:35:19,141] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 14:35:19,488] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=346.3
+[2026-04-10 14:35:37,313] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=20556.7
+[2026-04-10 14:37:25,484] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:37:26,324] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f7882440-1352-47c3-b08d-4b9f73dcc66b_chat_history.txt size=763
+[2026-04-10 14:37:27,033] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:38:23,097] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:48:30,297] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_ccf4b451-1260-4699-bb7b-f159a9bedd07_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:48:32,806] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_add762a9-3b96-4143-b553-40ac1077138b_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:48:33,307] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_add762a9-3b96-4143-b553-40ac1077138b_Screenshot2026-04-09234643.png
+[2026-04-10 14:48:33,329] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_14eba58d-5d45-4cdd-98b3-3bb123efd093_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 14:48:36,173] [INFO] [predictor] PREDICTION start
+[2026-04-10 14:48:36,174] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_add762a9-3b96-4143-b553-40ac1077138b_Screenshot2026-04-09234643.png
+[2026-04-10 14:48:36,174] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_add762a9-3b96-4143-b553-40ac1077138b_Screenshot2026-04-09234643.png
+[2026-04-10 14:48:39,017] [INFO] [predictor] PREPROCESS done | latency_ms=2843.5
+[2026-04-10 14:48:39,018] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 14:48:39,424] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=405.9
+[2026-04-10 14:49:04,716] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=28542.2
+[2026-04-10 14:49:06,065] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:51:14,976] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 14:51:16,412] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 14:52:13,923] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:03:59,531] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 15:05:04,948] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_bbc669e4-69ac-449b-a272-47e8302e4cec_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:05:33,669] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\519865f5-fc8c-4a31-9ef0-b46c9a2f7d27_oncovision_report.md size=295
+[2026-04-10 15:05:33,687] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\6c67e61e-5da8-4460-93a7-b69cb7431524_oncovision_report.pdf size=1598
+[2026-04-10 15:07:50,491] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3cbd13ba-7523-4353-a63c-ef6f22b30608_chat_history.txt size=763
+[2026-04-10 15:08:21,522] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\797e709b-eff7-4de0-bd1b-2246bc899902_chat_history.txt size=795
+[2026-04-10 15:08:22,948] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 15:08:56,099] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:09:59,448] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\fe9144cc-b9c5-40b3-a623-d3c6bfd94903_chat_history.txt size=1456
+[2026-04-10 15:13:22,248] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 15:13:45,134] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_32349e6f-cc70-4cb6-b167-b6a48af65bd9_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:13:59,824] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c10b1b0b-baa8-4936-96df-65b5ca8f781a_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:14:00,332] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c10b1b0b-baa8-4936-96df-65b5ca8f781a_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:00,341] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_ea1b381b-3e69-4de0-bbed-74d4bd244be7_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:14:03,507] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 15:14:03,507] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=7.5
+[2026-04-10 15:14:03,508] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 15:14:03,803] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 15:14:03,907] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 15:14:03,908] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 15:14:05,308] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 15:14:06,570] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 15:14:07,543] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7828401f-5042-4167-bc10-4158b89f02b1_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:14:08,011] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7828401f-5042-4167-bc10-4158b89f02b1_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:08,039] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c3e062cd-474b-4917-9fd2-46371d758f91_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:14:09,623] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 15:14:09,918] [INFO] [model_registry] XGBoost model exported to xgboost_thermal.json for warning-free loads.
+[2026-04-10 15:14:09,919] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 15:14:09,927] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 15:14:09,932] [INFO] [predictor] PREDICTION start
+[2026-04-10 15:14:09,933] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c10b1b0b-baa8-4936-96df-65b5ca8f781a_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:09,933] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c10b1b0b-baa8-4936-96df-65b5ca8f781a_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:10,859] [INFO] [predictor] PREDICTION start
+[2026-04-10 15:14:10,859] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7828401f-5042-4167-bc10-4158b89f02b1_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:10,859] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7828401f-5042-4167-bc10-4158b89f02b1_Screenshot2026-04-09234643.png
+[2026-04-10 15:14:12,861] [INFO] [predictor] PREPROCESS done | latency_ms=2928.4
+[2026-04-10 15:14:12,862] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 15:14:13,333] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=471.3
+[2026-04-10 15:14:14,142] [INFO] [predictor] PREPROCESS done | latency_ms=3282.6
+[2026-04-10 15:14:14,142] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 15:14:14,643] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=501.2
+[2026-04-10 15:14:44,187] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=34254.9
+[2026-04-10 15:14:45,004] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=34145.3
+[2026-04-10 15:14:45,773] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 15:16:56,235] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:16:58,192] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 15:18:17,940] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:40:04,168] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:42:00,952] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-10 15:42:24,183] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c7cc2aee-a0d9-4b89-b3f5-ac1eca81e6ea_oncovision_report.md size=295
+[2026-04-10 15:42:24,190] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\b7a51d3b-4981-4f44-b88b-fc79fc6b3b5b_oncovision_report.pdf size=1598
+[2026-04-10 15:42:36,728] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\085bc6c0-f145-4c32-ba44-5a431c229453_chat_history.txt size=0
+[2026-04-10 15:42:39,635] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\922e6941-2065-4d5a-9a11-dffba1bfb00b_chat_history.txt size=30
+[2026-04-10 15:42:40,946] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 15:42:56,667] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:43:21,003] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_fa1a9321-cb25-4261-8420-bc50d7f936d2_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:43:45,234] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7c8465f0-687d-4be3-80ed-09c83d978f08_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:43:45,890] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7c8465f0-687d-4be3-80ed-09c83d978f08_Screenshot2026-04-09234643.png
+[2026-04-10 15:43:45,900] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_0071fad1-7e9c-4303-935b-10b717448853_Screenshot2026-04-09234643.png size=138293
+[2026-04-10 15:43:48,918] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-10 15:43:48,919] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=7.5
+[2026-04-10 15:43:48,919] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-10 15:43:49,254] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-10 15:43:49,342] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-10 15:43:49,343] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-10 15:43:50,722] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-10 15:43:52,034] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-10 15:43:54,328] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-10 15:43:54,763] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-10 15:43:54,771] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-10 15:43:54,778] [INFO] [predictor] PREDICTION start
+[2026-04-10 15:43:54,778] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7c8465f0-687d-4be3-80ed-09c83d978f08_Screenshot2026-04-09234643.png
+[2026-04-10 15:43:54,779] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7c8465f0-687d-4be3-80ed-09c83d978f08_Screenshot2026-04-09234643.png
+[2026-04-10 15:43:57,503] [INFO] [predictor] PREPROCESS done | latency_ms=2724.2
+[2026-04-10 15:43:57,503] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-10 15:43:57,976] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=472.8
+[2026-04-10 15:44:22,174] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=27396.3
+[2026-04-10 15:45:45,447] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:45:46,824] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-10 15:46:46,313] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-10 15:49:58,665] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\2e62bb56-10ff-48f7-b927-1aae01575e0c_oncovision_report.md size=1102
+[2026-04-10 15:49:58,672] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\617d142b-f17b-4f30-bf67-71efece64198_oncovision_report.pdf size=1773
+[2026-04-10 15:50:33,011] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3c04a73a-b297-4302-b31a-b0b1918642b4_chat_history.txt size=1002
+[2026-04-11 13:48:12,474] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 13:48:23,391] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2c0912bc-d0e8-4118-8d46-ed58d4422f7a_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,393] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2d7689ea-adde-4ce5-8e88-17d630ffb8b4_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,394] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_357bca39-c537-47d9-8208-30301221f35f_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,395] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_421cfbd0-38c3-48b2-9626-fb2df289a2c0_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,396] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_584691a5-a221-4da7-a047-662e19fd4e06_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,398] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_723c76c4-9b9c-4dca-9247-bc1edda34e4f_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,399] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7858277e-c8a5-4d1a-8927-1e096dfaecf6_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,400] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b25f50f7-65d6-4e81-88a0-a6d8faf78c10_Screenshot2026-04-09234643.png
+[2026-04-11 13:48:23,404] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\0d9764f3-2770-4069-947d-91619933f8c9_oncovision_report.pdf
+[2026-04-11 13:48:23,406] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\bc593486-98fc-42b1-9ba8-0af0c24b23a8_chat_history.txt
+[2026-04-11 13:48:23,407] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c3ea00cd-5a9c-4f42-b179-acb233aec797_chat_history.txt
+[2026-04-11 13:48:23,408] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ca76dc2a-5420-4ed5-8c90-0a9ae9ef0683_chat_history.txt
+[2026-04-11 13:48:23,409] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\cb92d73c-c105-430a-94f8-efd0ffbc85b7_chat_history.txt
+[2026-04-11 13:48:23,410] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ce6a7b6c-4596-49ff-8d4b-d70ca8f76b17_oncovision_report.md
+[2026-04-11 13:48:23,411] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\ff98d53f-de9f-439a-8dcd-760e38536c32_chat_history.txt
+[2026-04-11 13:48:38,545] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c3adb3f1-bea9-4b07-a1fd-53b1e987730f_oncovision_report.md size=295
+[2026-04-11 13:48:38,551] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4e3e5f79-3bec-4baa-a53a-f0b6a7091e7c_oncovision_report.pdf size=1598
+[2026-04-11 13:48:50,984] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4cf1f6bb-7f9a-404d-afd0-85e0607ce005_chat_history.txt size=0
+[2026-04-11 13:48:57,089] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a75c0a6a-86e8-4768-ab3e-1dee53f31558_chat_history.txt size=30
+[2026-04-11 13:54:57,525] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 13:57:35,057] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4854daec-d5b5-4829-b06d-630380ce9716_oncovision_report.md size=295
+[2026-04-11 13:57:35,064] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\434ce858-8bc1-4fa6-8cdf-b6a36e552b55_oncovision_report.pdf size=1598
+[2026-04-11 13:57:50,381] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\203c5e25-5152-413c-8953-d0a75ce4df8a_chat_history.txt size=0
+[2026-04-11 14:04:54,365] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:04:59,528] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_76fa17ed-2fe5-4daf-b032-551dc6c8991c_Screenshot2026-04-09234643.png
+[2026-04-11 14:04:59,530] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_9d662feb-a316-47d2-a0e4-718696b192db_Screenshot2026-04-09234643.png
+[2026-04-11 14:04:59,531] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dac302a6-ef8a-4d43-bb4d-5a0cac9fbaee_Screenshot2026-04-09234643.png
+[2026-04-11 14:04:59,533] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\413bf2dc-7916-4b92-a3b1-dacc6f24c861_oncovision_report.md
+[2026-04-11 14:04:59,534] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f0a34983-42be-4673-b84b-4a43947ae597_oncovision_report.pdf
+[2026-04-11 14:05:42,204] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\6469e485-ac61-4074-8d22-2cc46069582e_oncovision_report.md size=295
+[2026-04-11 14:05:42,210] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\dfc6fc59-f5cb-4ac0-8414-c77e7492bc68_oncovision_report.pdf size=1598
+[2026-04-11 14:06:04,571] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\367ef055-ea2e-41f5-a5b2-74510cb28371_chat_history.txt size=0
+[2026-04-11 14:13:06,062] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_0b1b3e16-44e8-4f90-890a-330ee6b62916_Screenshot2026-04-09234643.png
+[2026-04-11 14:13:06,063] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b0c2637a-d3b2-419f-b02e-6f8aef2dbf33_Screenshot2026-04-09234643.png
+[2026-04-11 14:13:06,065] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e087b76c-4614-43fd-968b-cef14344e915_Screenshot2026-04-09234643.png
+[2026-04-11 14:13:06,067] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a0403815-0205-4b04-a7ba-c6a353236029_chat_history.txt
+[2026-04-11 14:13:46,709] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:21:14,177] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:21:19,080] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\36b00e1c-8b26-41c6-b3e9-835de6df95e9_oncovision_report.pdf
+[2026-04-11 14:21:19,083] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\5a7b6d1a-0188-4968-bae4-709592c63341_chat_history.txt
+[2026-04-11 14:21:19,084] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\76b44f47-5c97-4aef-822c-d4fe7cb2aa14_oncovision_report.md
+[2026-04-11 14:22:10,664] [ERROR] [asyncio] Task exception was never retrieved
+future: <Task finished name='Task-314' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py:1111> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1113, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1115, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+[2026-04-11 14:25:18,065] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\daa76883-cd60-4402-b18b-c998a4f232ae_oncovision_report.md size=295
+[2026-04-11 14:25:18,071] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3793e0fe-15f1-432f-80b4-92e6a92d1781_oncovision_report.pdf size=1598
+[2026-04-11 14:25:38,486] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a058201f-e825-42c6-a3dc-06959474015d_chat_history.txt size=0
+[2026-04-11 14:25:53,731] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3078bb1c-4150-4d80-8fc0-e554c6cb7af7_oncovision_report.md size=295
+[2026-04-11 14:25:53,736] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c0dbd23f-8bcb-4c5d-9d39-c56454b433ba_oncovision_report.pdf size=1598
+[2026-04-11 14:26:49,349] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:28:12,328] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:28:45,377] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a05277cd-b308-4164-8b46-f6a23732a474_oncovision_report.md size=295
+[2026-04-11 14:28:45,383] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\1a31e44c-a130-47e0-9683-12d202e09817_oncovision_report.pdf size=1598
+[2026-04-11 14:29:02,330] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\8443258e-72b7-40a6-82f5-449c9f99b29f_chat_history.txt size=0
+[2026-04-11 14:36:10,159] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_412893a4-d4fa-4ce7-a505-8afa2f80ba08_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,161] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_70416e23-43d5-4af3-a972-64c500a091dd_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,162] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7dabc5bf-4be1-4a9f-be9b-46c8af91723b_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,163] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c6afd3bc-3c3a-4b2f-90b9-4ca2cb26b6cb_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,164] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_dc313898-9e39-452a-adb2-45753bdcc8e5_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,165] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_f3d05cef-5542-457c-b2f7-900b116988ef_Screenshot2026-04-09234643.png
+[2026-04-11 14:36:10,167] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\18daa5fd-2f6b-403b-ab63-6f2e8b8eb4aa_oncovision_report.pdf
+[2026-04-11 14:36:10,168] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\492f28c7-f4c2-43fd-8063-b559da174e9f_chat_history.txt
+[2026-04-11 14:36:10,170] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\64ce4516-3733-4b95-9040-10e3c6c2d495_chat_history.txt
+[2026-04-11 14:36:10,171] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\82990258-dc10-48f1-b12e-bcf007c2b948_oncovision_report.md
+[2026-04-11 14:36:55,102] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\430a2c73-570a-471f-97f9-82393429d099_oncovision_report.md size=295
+[2026-04-11 14:36:55,106] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\d2641130-76da-4a07-99e4-a59e1616981d_oncovision_report.pdf size=1598
+[2026-04-11 14:37:28,512] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\127a53b8-04be-4b8f-855a-f33a60d18aa8_chat_history.txt size=0
+[2026-04-11 14:38:37,563] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:38:42,489] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f7882440-1352-47c3-b08d-4b9f73dcc66b_chat_history.txt
+[2026-04-11 14:39:37,687] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\fbaaba8f-66b1-469b-8bbe-a1754eccf470_oncovision_report.md size=295
+[2026-04-11 14:39:37,693] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\cc3d37a4-e8db-422b-8327-a831efdd34c6_oncovision_report.pdf size=1598
+[2026-04-11 14:39:59,540] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\360fbf37-9208-430c-b879-cd97b6f2f339_chat_history.txt size=0
+[2026-04-11 14:45:09,192] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\82a8322e-b12f-4368-b941-34995f12824a_oncovision_report.md size=295
+[2026-04-11 14:45:09,198] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\b9ae75c5-50e4-41bd-ab9c-b450708fcf70_oncovision_report.pdf size=1598
+[2026-04-11 14:45:18,565] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\45ea2220-148a-4028-b4c0-7af0350738a6_chat_history.txt size=0
+[2026-04-11 14:51:27,261] [INFO] [runtime] Runtime initialized | torch=2.10.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-11 14:51:32,402] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_14eba58d-5d45-4cdd-98b3-3bb123efd093_Screenshot2026-04-09234643.png
+[2026-04-11 14:51:32,404] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_add762a9-3b96-4143-b553-40ac1077138b_Screenshot2026-04-09234643.png
+[2026-04-11 14:51:32,405] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_ccf4b451-1260-4699-bb7b-f159a9bedd07_Screenshot2026-04-09234643.png
+[2026-04-11 14:52:35,909] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4e6a40fc-c887-4de3-b020-04e968a7c9cb_oncovision_report.md size=295
+[2026-04-11 14:52:35,916] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\337a2170-486c-462e-9905-c0e6174622d5_oncovision_report.pdf size=1598
+[2026-04-11 14:52:54,345] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a91a51b3-07d9-4abf-a935-1c2f7c7c29da_chat_history.txt size=0
+[2026-04-16 16:12:19,594] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-16 16:18:11,229] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-16 16:18:29,310] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_0071fad1-7e9c-4303-935b-10b717448853_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,316] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_32349e6f-cc70-4cb6-b167-b6a48af65bd9_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,318] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7828401f-5042-4167-bc10-4158b89f02b1_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,320] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7c8465f0-687d-4be3-80ed-09c83d978f08_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,323] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_bbc669e4-69ac-449b-a272-47e8302e4cec_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,324] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c10b1b0b-baa8-4936-96df-65b5ca8f781a_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,334] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c3e062cd-474b-4917-9fd2-46371d758f91_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,336] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_ea1b381b-3e69-4de0-bbed-74d4bd244be7_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,337] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_fa1a9321-cb25-4261-8420-bc50d7f936d2_Screenshot2026-04-09234643.png
+[2026-04-16 16:18:29,347] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\085bc6c0-f145-4c32-ba44-5a431c229453_chat_history.txt
+[2026-04-16 16:18:29,349] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\127a53b8-04be-4b8f-855a-f33a60d18aa8_chat_history.txt
+[2026-04-16 16:18:29,350] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\1a31e44c-a130-47e0-9683-12d202e09817_oncovision_report.pdf
+[2026-04-16 16:18:29,352] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\203c5e25-5152-413c-8953-d0a75ce4df8a_chat_history.txt
+[2026-04-16 16:18:29,357] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\2e62bb56-10ff-48f7-b927-1aae01575e0c_oncovision_report.md
+[2026-04-16 16:18:29,359] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3078bb1c-4150-4d80-8fc0-e554c6cb7af7_oncovision_report.md
+[2026-04-16 16:18:29,361] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\337a2170-486c-462e-9905-c0e6174622d5_oncovision_report.pdf
+[2026-04-16 16:18:29,364] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\360fbf37-9208-430c-b879-cd97b6f2f339_chat_history.txt
+[2026-04-16 16:18:29,367] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\367ef055-ea2e-41f5-a5b2-74510cb28371_chat_history.txt
+[2026-04-16 16:18:29,369] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3793e0fe-15f1-432f-80b4-92e6a92d1781_oncovision_report.pdf
+[2026-04-16 16:18:29,371] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3c04a73a-b297-4302-b31a-b0b1918642b4_chat_history.txt
+[2026-04-16 16:18:29,374] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3cbd13ba-7523-4353-a63c-ef6f22b30608_chat_history.txt
+[2026-04-16 16:18:29,375] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\430a2c73-570a-471f-97f9-82393429d099_oncovision_report.md
+[2026-04-16 16:18:29,377] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\434ce858-8bc1-4fa6-8cdf-b6a36e552b55_oncovision_report.pdf
+[2026-04-16 16:18:29,378] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\45ea2220-148a-4028-b4c0-7af0350738a6_chat_history.txt
+[2026-04-16 16:18:29,380] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4854daec-d5b5-4829-b06d-630380ce9716_oncovision_report.md
+[2026-04-16 16:18:29,382] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4cf1f6bb-7f9a-404d-afd0-85e0607ce005_chat_history.txt
+[2026-04-16 16:18:29,383] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4e3e5f79-3bec-4baa-a53a-f0b6a7091e7c_oncovision_report.pdf
+[2026-04-16 16:18:29,389] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\4e6a40fc-c887-4de3-b020-04e968a7c9cb_oncovision_report.md
+[2026-04-16 16:18:29,392] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\519865f5-fc8c-4a31-9ef0-b46c9a2f7d27_oncovision_report.md
+[2026-04-16 16:18:29,397] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\617d142b-f17b-4f30-bf67-71efece64198_oncovision_report.pdf
+[2026-04-16 16:18:29,398] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\6469e485-ac61-4074-8d22-2cc46069582e_oncovision_report.md
+[2026-04-16 16:18:29,400] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\6c67e61e-5da8-4460-93a7-b69cb7431524_oncovision_report.pdf
+[2026-04-16 16:18:29,403] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\797e709b-eff7-4de0-bd1b-2246bc899902_chat_history.txt
+[2026-04-16 16:18:29,406] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\82a8322e-b12f-4368-b941-34995f12824a_oncovision_report.md
+[2026-04-16 16:18:29,408] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\8443258e-72b7-40a6-82f5-449c9f99b29f_chat_history.txt
+[2026-04-16 16:18:29,416] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\922e6941-2065-4d5a-9a11-dffba1bfb00b_chat_history.txt
+[2026-04-16 16:18:29,421] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a05277cd-b308-4164-8b46-f6a23732a474_oncovision_report.md
+[2026-04-16 16:18:29,425] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a058201f-e825-42c6-a3dc-06959474015d_chat_history.txt
+[2026-04-16 16:18:29,438] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a75c0a6a-86e8-4768-ab3e-1dee53f31558_chat_history.txt
+[2026-04-16 16:18:29,439] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a91a51b3-07d9-4abf-a935-1c2f7c7c29da_chat_history.txt
+[2026-04-16 16:18:29,444] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\b7a51d3b-4981-4f44-b88b-fc79fc6b3b5b_oncovision_report.pdf
+[2026-04-16 16:18:29,449] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\b9ae75c5-50e4-41bd-ab9c-b450708fcf70_oncovision_report.pdf
+[2026-04-16 16:18:29,451] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c0dbd23f-8bcb-4c5d-9d39-c56454b433ba_oncovision_report.pdf
+[2026-04-16 16:18:29,452] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c3adb3f1-bea9-4b07-a1fd-53b1e987730f_oncovision_report.md
+[2026-04-16 16:18:29,456] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c7cc2aee-a0d9-4b89-b3f5-ac1eca81e6ea_oncovision_report.md
+[2026-04-16 16:18:29,458] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\cc3d37a4-e8db-422b-8327-a831efdd34c6_oncovision_report.pdf
+[2026-04-16 16:18:29,462] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\d2641130-76da-4a07-99e4-a59e1616981d_oncovision_report.pdf
+[2026-04-16 16:18:29,466] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\daa76883-cd60-4402-b18b-c998a4f232ae_oncovision_report.md
+[2026-04-16 16:18:29,469] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\dfc6fc59-f5cb-4ac0-8414-c77e7492bc68_oncovision_report.pdf
+[2026-04-16 16:18:29,478] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\fbaaba8f-66b1-469b-8bbe-a1754eccf470_oncovision_report.md
+[2026-04-16 16:18:29,483] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\fe9144cc-b9c5-40b3-a623-d3c6bfd94903_chat_history.txt
+[2026-04-16 16:19:37,111] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a14db40a-fe9e-4648-9aa8-a53c65e10c38_oncovision_report.md size=295
+[2026-04-16 16:19:37,121] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f712e9e7-61b4-48b3-9cc9-7cb1e0e64f0d_oncovision_report.pdf size=1596
+[2026-04-16 16:20:10,877] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\740188e2-0101-43b0-a492-8e8380284fc5_chat_history.txt size=0
+[2026-04-16 16:20:42,917] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c87e2e57-cdec-4384-a6b9-b8ade167fd89_chat_history.txt size=23
+[2026-04-16 16:20:45,785] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-16 16:21:13,190] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-16 17:22:55,680] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e4f5fd2f-00c5-4fdb-bc7c-56b68489c800_Screenshot2026-04-14133611.png size=188705
+[2026-04-16 17:25:08,028] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_f9a9d26c-4731-4359-bd85-cfe5f4a5cc5c_IIR0100_anterior.jpg size=224351
+[2026-04-16 17:25:10,427] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_6df65ee5-27ae-4567-90db-c4bbda98a045_IIR0100_anterior.jpg size=224351
+[2026-04-16 17:25:11,161] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_6df65ee5-27ae-4567-90db-c4bbda98a045_IIR0100_anterior.jpg
+[2026-04-16 17:25:12,368] [WARNING] [model_loader] torch runtime 2.11.0+cpu differs from trained 2.10 (compatibility prefixes applied).
+[2026-04-16 17:25:12,457] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-16 17:25:12,457] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=89.9
+[2026-04-16 17:25:12,458] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-16 17:25:12,685] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-16 17:25:12,866] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-16 17:25:12,866] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-16 17:25:14,139] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Out of bounds on buffer access (axis 0)
+[2026-04-16 17:25:14,158] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-16 17:25:14,731] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-16 17:25:16,086] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-16 17:25:16,512] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-16 17:25:16,528] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-16 17:25:16,532] [INFO] [predictor] PREDICTION start
+[2026-04-16 17:25:16,533] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_6df65ee5-27ae-4567-90db-c4bbda98a045_IIR0100_anterior.jpg
+[2026-04-16 17:25:16,533] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_6df65ee5-27ae-4567-90db-c4bbda98a045_IIR0100_anterior.jpg
+[2026-04-16 17:25:16,750] [INFO] [predictor] PREPROCESS done | latency_ms=217.4
+[2026-04-16 17:25:16,752] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-16 17:25:17,052] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=300.8
+[2026-04-16 17:25:17,670] [INFO] [predictor] PREDICTION done | prediction=Normal confidence=0.5438 risk_score=35.05 latency_ms=1138.0
+[2026-04-16 17:25:18,243] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-16 17:26:38,263] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-16 17:27:40,321] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-16 17:28:41,540] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-16 17:31:25,265] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_4cdcacc3-2773-450c-9b36-a31524a71df8_IIR0100_anterior.jpg size=224351
+[2026-04-16 17:31:29,921] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_23facc09-daa6-44cf-9e19-de3b095c51da_IIR0100_anterior.jpg size=224351
+[2026-04-16 17:31:30,487] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_23facc09-daa6-44cf-9e19-de3b095c51da_IIR0100_anterior.jpg
+[2026-04-16 17:31:30,716] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_03eae011-b43a-4ed8-be41-67897d69e95e_IIR0100_anterior.jpg size=224351
+[2026-04-16 17:31:31,732] [WARNING] [model_loader] torch runtime 2.11.0+cpu differs from trained 2.10 (compatibility prefixes applied).
+[2026-04-16 17:31:31,736] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-16 17:31:31,736] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=5.1
+[2026-04-16 17:31:31,737] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-16 17:31:32,111] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-16 17:31:32,332] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-16 17:31:32,332] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-16 17:31:33,247] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Out of bounds on buffer access (axis 0)
+[2026-04-16 17:31:33,257] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-16 17:31:34,298] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-16 17:31:36,566] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-16 17:31:36,978] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-16 17:31:36,984] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-16 17:31:36,990] [INFO] [predictor] PREDICTION start
+[2026-04-16 17:31:36,990] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_23facc09-daa6-44cf-9e19-de3b095c51da_IIR0100_anterior.jpg
+[2026-04-16 17:31:36,990] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_23facc09-daa6-44cf-9e19-de3b095c51da_IIR0100_anterior.jpg
+[2026-04-16 17:31:37,411] [INFO] [predictor] PREPROCESS done | latency_ms=420.8
+[2026-04-16 17:31:37,411] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-16 17:31:38,140] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=728.6
+[2026-04-16 17:31:39,307] [INFO] [predictor] PREDICTION done | prediction=Normal confidence=0.5438 risk_score=35.05 latency_ms=2317.3
+[2026-04-16 17:31:41,020] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-16 17:33:11,495] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-16 17:34:13,342] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-16 17:40:23,712] [INFO] [app] ANALYSIS_JOB done | has_result=True
+[2026-04-16 17:40:23,713] [INFO] [app] ANALYSIS_JOB state promoted | prediction=Normal
+[2026-04-16 17:40:24,543] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c2632c7f-1380-4328-9c57-a2b5b63f113c_oncovision_report.md size=1090
+[2026-04-16 17:40:24,551] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\90ca84e7-f145-4da8-9891-12eedaede456_oncovision_report.pdf size=1801
+[2026-04-18 01:03:01,827] [INFO] [runtime] Runtime initialized | torch=2.11.0+cpu sklearn=1.8.0 device=cpu
+[2026-04-18 01:03:28,321] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_03eae011-b43a-4ed8-be41-67897d69e95e_IIR0100_anterior.jpg
+[2026-04-18 01:03:28,322] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_23facc09-daa6-44cf-9e19-de3b095c51da_IIR0100_anterior.jpg
+[2026-04-18 01:03:28,323] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_4cdcacc3-2773-450c-9b36-a31524a71df8_IIR0100_anterior.jpg
+[2026-04-18 01:03:28,324] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_6df65ee5-27ae-4567-90db-c4bbda98a045_IIR0100_anterior.jpg
+[2026-04-18 01:03:28,325] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_e4f5fd2f-00c5-4fdb-bc7c-56b68489c800_Screenshot2026-04-14133611.png
+[2026-04-18 01:03:28,326] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_f9a9d26c-4731-4359-bd85-cfe5f4a5cc5c_IIR0100_anterior.jpg
+[2026-04-18 01:03:28,326] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\740188e2-0101-43b0-a492-8e8380284fc5_chat_history.txt
+[2026-04-18 01:03:28,327] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\90ca84e7-f145-4da8-9891-12eedaede456_oncovision_report.pdf
+[2026-04-18 01:03:28,328] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\a14db40a-fe9e-4648-9aa8-a53c65e10c38_oncovision_report.md
+[2026-04-18 01:03:28,329] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c2632c7f-1380-4328-9c57-a2b5b63f113c_oncovision_report.md
+[2026-04-18 01:03:28,329] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\c87e2e57-cdec-4384-a6b9-b8ade167fd89_chat_history.txt
+[2026-04-18 01:03:28,330] [INFO] [file_store] Removed stale file | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\f712e9e7-61b4-48b3-9cc9-7cb1e0e64f0d_oncovision_report.pdf
+[2026-04-18 01:04:45,188] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_eeebc29b-01e3-49ce-a66b-8c569e5fa608_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:04:55,001] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_257adbe2-97de-42c6-9c9d-bf6e0f341b68_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:04:55,730] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_c2eb063d-0c33-41b1-b55a-dfea42d0e177_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:04:55,743] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_257adbe2-97de-42c6-9c9d-bf6e0f341b68_Screenshot2026-04-09234643.png
+[2026-04-18 01:04:58,383] [WARNING] [model_loader] torch runtime 2.11.0+cpu differs from trained 2.10 (compatibility prefixes applied).
+[2026-04-18 01:04:58,562] [INFO] [model_loader] Model preflight passed | model_version=v1-hotfix sklearn=1.8.0 torch=2.10
+[2026-04-18 01:04:58,562] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=179.9
+[2026-04-18 01:04:58,562] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-04-18 01:04:58,941] [INFO] [model_loader] Loading model start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-04-18 01:04:59,173] [INFO] [model_loader] Autoencoder model load successful | path=autoencoder.pth
+[2026-04-18 01:04:59,173] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-04-18 01:05:00,994] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-04-18 01:05:02,294] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-04-18 01:05:05,233] [INFO] [model_registry] MODEL_LOAD xgboost_classifier
+[2026-04-18 01:05:06,187] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-04-18 01:05:06,213] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-04-18 01:05:06,219] [INFO] [predictor] PREDICTION start
+[2026-04-18 01:05:06,220] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_257adbe2-97de-42c6-9c9d-bf6e0f341b68_Screenshot2026-04-09234643.png
+[2026-04-18 01:05:06,220] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_257adbe2-97de-42c6-9c9d-bf6e0f341b68_Screenshot2026-04-09234643.png
+[2026-04-18 01:05:08,626] [INFO] [predictor] PREPROCESS done | latency_ms=2405.9
+[2026-04-18 01:05:08,626] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-18 01:05:10,010] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=1383.9
+[2026-04-18 01:05:11,387] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=5167.8
+[2026-04-18 01:05:12,995] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-18 01:07:00,831] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:07:28,034] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\3f3bb55c-a018-4865-8e70-9b3c467d7d12_oncovision_report.md size=295
+[2026-04-18 01:07:28,046] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\78cbab47-74bc-4cad-9a9e-7df28511e836_oncovision_report.pdf size=1596
+[2026-04-18 01:08:03,286] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:08:19,845] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_9d920123-cb48-40de-88dc-f70dff47bf20_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:08:24,258] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7a7f4e02-1e16-40d6-a354-4f62860a02a5_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:08:24,888] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7a7f4e02-1e16-40d6-a354-4f62860a02a5_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:25,753] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b701fb38-99e6-4e94-bfe0-20ca7f118924_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:08:26,288] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b701fb38-99e6-4e94-bfe0-20ca7f118924_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:26,485] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_2ecd64ec-0862-4919-93be-492452e5e194_Screenshot2026-04-09234643.png size=138293
+[2026-04-18 01:08:28,294] [INFO] [predictor] PREDICTION start
+[2026-04-18 01:08:28,294] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7a7f4e02-1e16-40d6-a354-4f62860a02a5_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:28,295] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_7a7f4e02-1e16-40d6-a354-4f62860a02a5_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:30,207] [INFO] [predictor] PREDICTION start
+[2026-04-18 01:08:30,208] [INFO] [predictor] PREPROCESS start | path=D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b701fb38-99e6-4e94-bfe0-20ca7f118924_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:30,208] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\SeminarProject\breast_cancer_detection\uploads\image_b701fb38-99e6-4e94-bfe0-20ca7f118924_Screenshot2026-04-09234643.png
+[2026-04-18 01:08:31,198] [INFO] [predictor] PREPROCESS done | latency_ms=2904.0
+[2026-04-18 01:08:31,199] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-18 01:08:32,318] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=1118.6
+[2026-04-18 01:08:33,175] [INFO] [predictor] PREPROCESS done | latency_ms=2966.9
+[2026-04-18 01:08:33,175] [INFO] [predictor] FEATURE_EXTRACTION start
+[2026-04-18 01:08:34,885] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=6590.6
+[2026-04-18 01:08:36,269] [INFO] [predictor] FEATURE_EXTRACTION done | latency_ms=3093.9
+[2026-04-18 01:08:36,807] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-18 01:08:52,553] [INFO] [predictor] PREDICTION done | prediction=Malignant confidence=0.6692 risk_score=66.92 latency_ms=22346.3
+[2026-04-18 01:10:16,385] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:10:29,216] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\d14c9e22-7edd-4764-b5ff-e466bbd49af1_oncovision_report.md size=1102
+[2026-04-18 01:10:29,238] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\52824376-01d4-4523-a782-31b02cf1451c_oncovision_report.pdf size=1782
+[2026-04-18 01:11:05,498] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:11:09,647] [INFO] [httpx] HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+[2026-04-18 01:11:55,815] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\df55e6a1-65da-4055-add2-3b39d4433ff6_chat_history.txt size=0
+[2026-04-18 01:12:13,283] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:13:00,593] [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-04-18 01:13:00,637] [INFO] [app] ANALYSIS_JOB done | has_result=True
+[2026-04-18 01:13:00,640] [INFO] [app] ANALYSIS_JOB state promoted | prediction=Malignant
+[2026-04-18 01:13:07,553] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\8429408c-b66c-4158-b0a6-a6154dcb99a4_chat_history.txt size=94
