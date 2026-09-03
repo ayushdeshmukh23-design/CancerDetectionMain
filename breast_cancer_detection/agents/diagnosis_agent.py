@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 
 from breast_cancer_detection.agents.image_analyzer_agent import safe_agent_run
-from breast_cancer_detection.inference.predictor import Predictor
+from breast_cancer_detection.inference.predictor import get_shared_predictor
 from breast_cancer_detection.utils.pipeline_logs import append_pipeline_log
 
 
@@ -14,11 +14,22 @@ from breast_cancer_detection.utils.pipeline_logs import append_pipeline_log
 def diagnosis_node(state):
     start = time.perf_counter()
     append_pipeline_log(state, "diagnosis_agent", "Starting ensemble inference")
-    predictor = Predictor()
+    predictor = get_shared_predictor()
     thermal = None
     if state.get("thermal_features") and "matrix" in state["thermal_features"]:
         thermal = state["thermal_features"]["matrix"]
-    output = predictor.predict(state["image_path"], thermal)
+
+    preprocessed = state.get("preprocessed_image")
+    features = state.get("image_features")
+    if preprocessed is not None:
+        output = predictor.predict_from_artifacts(
+            processed=preprocessed,
+            features=features,
+            thermal_matrix=thermal,
+        )
+    else:
+        output = predictor.predict(state["image_path"], thermal)
+
     state["model_predictions"] = output.get("model_contributions")
     state["ensemble_result"] = output
     state["preprocessed_image"] = output.get("processed", state.get("preprocessed_image"))

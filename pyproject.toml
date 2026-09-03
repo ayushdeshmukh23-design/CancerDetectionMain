@@ -5,11 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "breast-cancer-detection"
 version = "0.1.0"
-description = "OncoVision AI Streamlit multi-modal breast cancer detection app"
+description = "OncoVision AI multi-modal breast cancer detection clinical workstation"
 readme = "breast_cancer_detection/README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "streamlit>=1.32.0",
+  "fastapi>=0.110.0",
+  "uvicorn>=0.28.0",
 ]
 
 [tool.setuptools]

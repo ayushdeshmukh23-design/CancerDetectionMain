@@ -1,2 +1,122 @@
-models/
-breast_cancer_detection/models/
+# ─────────────────────────────────────────────
+#  OncoVision AI — .gitignore
+# ─────────────────────────────────────────────
+
+# ── Secrets & Environment ────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ── Python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+pip-wheel-metadata/
+
+# ── Virtual Environments ─────────────────────
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# ── ML Model Artifacts ───────────────────────
+# Trained weights — large binary files
+breast_cancer_detection/models/*.pth
+breast_cancer_detection/models/*.pt
+breast_cancer_detection/models/*.pkl
+breast_cancer_detection/models/*.joblib
+breast_cancer_detection/models/*.h5
+breast_cancer_detection/models/*.onnx
+breast_cancer_detection/models/*.json
+# Keep manifest/metadata tracked
+!breast_cancer_detection/models/model_versions.json
+!breast_cancer_detection/models/model_metadata.json
+
+# ── Datasets ─────────────────────────────────
+breast_cancer_detection/Datasets/
+Datasets/
+data/
+*.csv
+*.npy
+*.npz
+!breast_cancer_detection/training/
+!requirements.txt
+
+# ── Uploads & Outputs (runtime generated) ────
+breast_cancer_detection/uploads/
+breast_cancer_detection/outputs/
+breast_cancer_detection/.uploads/
+uploads/
+outputs/
+
+# ── Logs ─────────────────────────────────────
+breast_cancer_detection/logs/
+logs/
+*.log
+
+# ── Node / Frontend ──────────────────────────
+frontend/node_modules/
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+.npm/
+.yarn/
+yarn-error.log
+package-lock.json
+# Keep package.json and yarn.lock tracked
+!frontend/package.json
+!frontend/package-lock.json
+
+# ── IDE & Editor ─────────────────────────────
+.vscode/mcp.json
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# ── OS Generated ─────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ── Temporary & Scratch ───────────────────────
+tmp/
+temp/
+scratch/
+*.tmp
+*.bak
+*.orig
+
+# ── Jupyter ───────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Docker ────────────────────────────────────
+.dockerignore
+
+# ── Miscellaneous ─────────────────────────────
+*.zip
+*.tar.gz
+*.gz

@@ -32,7 +32,8 @@ DEFAULT_STATE = {
     "chat_history": [],
     "patient_history": [],
     "models_loaded": False,
-    "ollama_connected": False,
+    "openrouter_connected": False,
+    "llm_connected": False,
     "analysis_job_id": None,
     "analysis_job_error": None,
 }

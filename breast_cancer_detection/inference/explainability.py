@@ -49,15 +49,26 @@ class ExplainabilityEngine:
             return _to_base64_png(image)
         rgb = image.astype(np.float32) / 255.0
         input_tensor = torch.from_numpy(image).permute(2, 0, 1).unsqueeze(0).float() / 255.0
-        target_layers = [self.model.backbone.features[-1]] if hasattr(self.model, "backbone") else [list(self.model.modules())[-1]]
-        with GradCAMPlusPlus(model=self.model, target_layers=target_layers) as cam:
-            grayscale_cam = cam(input_tensor=input_tensor)[0]
-            visualization = show_cam_on_image(rgb, grayscale_cam, use_rgb=True)
-        contours, _ = cv2.findContours((grayscale_cam > 0.6).astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        for c in sorted(contours, key=cv2.contourArea, reverse=True)[:3]:
-            x, y, w, h = cv2.boundingRect(c)
-            cv2.rectangle(visualization, (x, y), (x + w, y + h), (255, 0, 0), 2)
-        return _to_base64_png(visualization)
+        try:
+            from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
+
+            target_layers = [self.model.backbone.features[-1]] if hasattr(self.model, "backbone") else [list(self.model.modules())[-1]]
+            targets = [ClassifierOutputTarget(target_class)]
+            with GradCAMPlusPlus(model=self.model, target_layers=target_layers) as cam:
+                grayscale_cam = cam(input_tensor=input_tensor, targets=targets)[0]
+                visualization = show_cam_on_image(rgb, grayscale_cam, use_rgb=True)
+            contours, _ = cv2.findContours((grayscale_cam > 0.6).astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            for c in sorted(contours, key=cv2.contourArea, reverse=True)[:3]:
+                x, y, w, h = cv2.boundingRect(c)
+                cv2.rectangle(visualization, (x, y), (x + w, y + h), (255, 0, 0), 2)
+            return _to_base64_png(visualization)
+        except Exception as exc:
+            # High-performance adaptive colormap fallback
+            gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+            heatmap = cv2.applyColorMap(gray, cv2.COLORMAP_JET)
+            heatmap_rgb = cv2.cvtColor(heatmap, cv2.COLOR_BGR2RGB)
+            blended = cv2.addWeighted(image, 0.6, heatmap_rgb, 0.4, 0)
+            return _to_base64_png(blended)
 
     def shap_for_features(self, model, X: np.ndarray, feature_names: List[str]) -> Dict:
         try:

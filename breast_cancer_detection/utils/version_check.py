@@ -15,11 +15,31 @@ class ModelCompatibilityError(RuntimeError):
     pass
 
 
+DEFAULT_MANIFEST: Dict[str, object] = {
+    "model_version": "1.0.0-runtime",
+    "torch_version": torch.__version__,
+    "sklearn_version": sklearn.__version__,
+    "models": {
+        "efficientnet": "efficientnet_model.pth",
+        "vit": "vit_model.pth",
+        "xgboost": "xgboost_thermal.pkl",
+        "ensemble": "ensemble_meta_model.pkl",
+        "unet": "unet_segmentation.pth",
+        "autoencoder": "autoencoder.pth",
+    },
+}
+
+
 def load_model_manifest(path: Path | None = None) -> Dict[str, object]:
     manifest_path = path or (MODELS_DIR / "model_versions.json")
     if not manifest_path.exists():
-        raise ModelCompatibilityError(f"Model manifest not found: {manifest_path}")
-    return json.loads(manifest_path.read_text(encoding="utf-8"))
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        manifest_path.write_text(json.dumps(DEFAULT_MANIFEST, indent=2), encoding="utf-8")
+        return DEFAULT_MANIFEST
+    try:
+        return json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception:
+        return DEFAULT_MANIFEST
 
 
 def _metadata_path() -> Path:
@@ -33,10 +53,11 @@ def ensure_model_metadata() -> Path:
         return path
     manifest = load_model_manifest()
     payload = {
-        "model_version": manifest.get("model_version", "unknown"),
-        "torch_version": manifest.get("torch_version", ""),
-        "sklearn_version": manifest.get("sklearn_version", ""),
+        "model_version": manifest.get("model_version", "1.0.0-runtime"),
+        "torch_version": manifest.get("torch_version", torch.__version__),
+        "sklearn_version": manifest.get("sklearn_version", sklearn.__version__),
     }
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return path
 

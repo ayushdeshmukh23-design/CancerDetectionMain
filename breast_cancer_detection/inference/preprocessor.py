@@ -65,7 +65,8 @@ class PreprocessingPipeline:
         bgd_model = np.zeros((1, 65), np.float64)
         fgd_model = np.zeros((1, 65), np.float64)
         rect = (10, 10, image.shape[1] - 20, image.shape[0] - 20)
-        cv2.grabCut(image, mask, rect, bgd_model, fgd_model, 5, cv2.GC_INIT_WITH_RECT)
+        iter_count = 2 if not self.training else 5
+        cv2.grabCut(image, mask, rect, bgd_model, fgd_model, iter_count, cv2.GC_INIT_WITH_RECT)
         mask2 = np.where((mask == 2) | (mask == 0), 0, 1).astype("uint8")
         return image * mask2[:, :, np.newaxis]
 

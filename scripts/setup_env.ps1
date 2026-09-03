@@ -19,11 +19,12 @@ Write-Host "Upgrading pip/setuptools/wheel..."
 & $venvPython -m pip install --upgrade pip setuptools wheel
 
 Write-Host "Installing project dependencies..."
-& $venvPython -m pip install -r "breast_cancer_detection\requirements.txt"
+& $venvPython -m pip install -r "requirements.txt"
 
 Write-Host "Installing package in editable mode..."
 & $venvPython -m pip install -e .
 
 Write-Host "Setup complete."
 Write-Host "Activate with: .\.venv\Scripts\Activate.ps1"
-Write-Host "Run app with: streamlit run breast_cancer_detection\app.py"
+Write-Host "Start backend API: uvicorn breast_cancer_detection.backend.api:app --reload"
+Write-Host "Start frontend UI: cd frontend; npm run dev"

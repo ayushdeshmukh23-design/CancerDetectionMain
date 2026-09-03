@@ -35,6 +35,12 @@ class DiagnosisState(TypedDict):
     processing_time: float
 
 
+import threading
+
+_COMPILED_GRAPH = None
+_GRAPH_LOCK = threading.Lock()
+
+
 def build_diagnosis_graph():
     graph = StateGraph(DiagnosisState)
     graph.add_node("image_analyzer", image_analyzer_node)
@@ -55,4 +61,15 @@ def build_diagnosis_graph():
     graph.add_edge("explainability_agent", "report_generator")
     graph.add_edge("report_generator", END)
     return graph.compile()
+
+
+def get_compiled_diagnosis_graph():
+    """Thread-safe singleton compiled graph to eliminate re-compilation latency."""
+    global _COMPILED_GRAPH
+    if _COMPILED_GRAPH is None:
+        with _GRAPH_LOCK:
+            if _COMPILED_GRAPH is None:
+                _COMPILED_GRAPH = build_diagnosis_graph()
+    return _COMPILED_GRAPH
+
 

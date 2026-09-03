@@ -19,11 +19,12 @@ echo "Upgrading pip/setuptools/wheel..."
 "$VENV_PY" -m pip install --upgrade pip setuptools wheel
 
 echo "Installing project dependencies..."
-"$VENV_PY" -m pip install -r breast_cancer_detection/requirements.txt
+"$VENV_PY" -m pip install -r requirements.txt
 
 echo "Installing package in editable mode..."
 "$VENV_PY" -m pip install -e .
 
 echo "Setup complete."
 echo "Activate with: source .venv/bin/activate"
-echo "Run app with: streamlit run breast_cancer_detection/app.py"
+echo "Start backend API: uvicorn breast_cancer_detection.backend.api:app --reload"
+echo "Start frontend UI: cd frontend && npm run dev"

@@ -100,7 +100,8 @@ def main():
         report["ensemble"] = ens_metrics
     (MODELS_DIR / "evaluation_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     logger.info("ALL MODELS TRAINED AND SAVED TO models/")
-    logger.info("Run: streamlit run breast_cancer_detection/app.py")
+    logger.info("Start API: uvicorn breast_cancer_detection.backend.api:app --reload")
+    logger.info("Start UI: cd frontend && npm run dev")
 
 
 if __name__ == "__main__":

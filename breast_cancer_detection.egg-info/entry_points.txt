@@ -1,2 +1,0 @@
-[console_scripts]
-oncovision-init = breast_cancer_detection.setup:main

@@ -3,10 +3,9 @@ from __future__ import annotations
 import os
 import time
 import uuid
+import shutil
 from pathlib import Path
 from typing import Optional
-
-import streamlit as st
 
 from breast_cancer_detection.utils.config import OUTPUTS_DIR, UPLOADS_DIR
 from breast_cancer_detection.utils.logger import get_logger
@@ -25,16 +24,30 @@ def _safe_filename(name: str) -> str:
     return keep or "file.bin"
 
 
-def save_uploaded_file(uploaded_file, *, prefix: str = "") -> str:
-    """Persist an uploaded Streamlit file to disk and return absolute path."""
+def save_uploaded_file(uploaded_file, filename: Optional[str] = None, *, prefix: str = "") -> str:
+    """Persist an uploaded file (FastAPI UploadFile, file-like stream, or bytes) to disk and return absolute path."""
     ensure_storage_dirs()
-    safe_name = _safe_filename(getattr(uploaded_file, "name", "upload.bin"))
+    name = filename or getattr(uploaded_file, "filename", None) or getattr(uploaded_file, "name", None) or "upload.bin"
+    safe_name = _safe_filename(name)
     file_id = str(uuid.uuid4())
     pref = f"{prefix}_" if prefix else ""
     file_path = Path(UPLOADS_DIR) / f"{pref}{file_id}_{safe_name}"
     try:
         with open(file_path, "wb") as f:
-            f.write(uploaded_file.getbuffer())
+            if hasattr(uploaded_file, "getbuffer"):
+                f.write(uploaded_file.getbuffer())
+            elif hasattr(uploaded_file, "read"):
+                if hasattr(uploaded_file, "seek"):
+                    try:
+                        uploaded_file.seek(0)
+                    except Exception:
+                        pass
+                content = uploaded_file.read()
+                f.write(content)
+            elif isinstance(uploaded_file, (bytes, bytearray)):
+                f.write(uploaded_file)
+            else:
+                shutil.copyfileobj(uploaded_file, f)
         logger.info("Uploaded file persisted | path=%s size=%d", file_path, file_path.stat().st_size)
         return str(file_path)
     except Exception as exc:
@@ -62,29 +75,10 @@ def save_output_text(content: str, filename: str, encoding: str = "utf-8") -> st
     return save_output_bytes(content.encode(encoding), filename)
 
 
-@st.cache_data(show_spinner=False)
 def load_file_bytes(path: str) -> bytes:
-    """Cached file-bytes reader for download controls."""
+    """File-bytes reader for persisted files."""
     with open(path, "rb") as f:
         return f.read()
-
-
-def render_download_button(file_path: Optional[str], label: str, mime: str = "application/octet-stream", key: str = "") -> None:
-    if not file_path:
-        st.caption(f"{label}: not available")
-        return
-    try:
-        data = load_file_bytes(file_path)
-        st.download_button(
-            label=label,
-            data=data,
-            file_name=Path(file_path).name,
-            mime=mime,
-            key=key or f"download-{Path(file_path).name}",
-        )
-    except Exception as exc:
-        logger.exception("Download render failed | path=%s", file_path)
-        st.error(f"Unable to prepare download for {Path(file_path).name}: {exc}")
 
 
 def cleanup_old_files(folder: str | Path, max_age: int = 86400) -> None:

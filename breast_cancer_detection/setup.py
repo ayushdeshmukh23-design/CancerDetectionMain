@@ -10,8 +10,7 @@ def main():
         "inference",
         "agents",
         "llm",
-        "pages",
-        "components",
+        "backend",
         "assets",
         "utils",
     ]:
@@ -35,9 +34,10 @@ def main():
                 b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x02\x00\x00\x00\x90wS\xde\x00\x00\x00\x0cIDAT\x08\x1dc\xf8\xff\xff?\x00\x05\xfe\x02\xfeA\xf4\x9b\xcd\x00\x00\x00\x00IEND\xaeB`\x82"
             )
     print("Project directories initialized.")
-    print("Next: pip install -r breast_cancer_detection/requirements.txt")
+    print("Next: pip install -r requirements.txt")
     print("Then: python -m breast_cancer_detection.training.train_all")
-    print("Then: streamlit run breast_cancer_detection/app.py")
+    print("Then: uvicorn breast_cancer_detection.backend.api:app --reload")
+    print("Then: cd frontend && npm run dev")
 
 
 if __name__ == "__main__":

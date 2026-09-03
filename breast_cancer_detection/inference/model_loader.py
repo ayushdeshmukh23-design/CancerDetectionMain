@@ -103,7 +103,10 @@ def load_autoencoder_model(
 
 def load_autoencoder_safely(path: Path, device: str = "cpu") -> ConvAutoencoder:
     model = ConvAutoencoder()
-    return load_autoencoder_model(model=model, path=path, device=device, logger_instance=logger)
+    if path and path.exists():
+        return load_autoencoder_model(model=model, path=path, device=device, logger_instance=logger)
+    logger.info("Autoencoder checkpoint not found at %s; using initialized architecture.", path)
+    return model.to(device).eval()
 
 
 def _is_sklearn_version_compatible(manifest: Dict[str, Any]) -> tuple[bool, str]:

@@ -6,9 +6,9 @@
 - **Medical image analysis** (RGB breast image)
 - **Thermal matrix analysis** (optional second modality)
 - **Deep learning + classical ML fusion**
-- **Explainable AI surfaces** (Grad-CAM++, SHAP, LIME)
+- **Explainable AI surfaces** (Grad-CAM++, ViT Attention, SHAP, LIME, Integrated Gradients)
 - **LLM-powered clinical report + chat assistant**
-- **Streamlit UI with workflow pages**
+- **Modern React 19 clinical workstation powered by a high-performance FastAPI backend**
 
 This is an **assistive decision-support pipeline**, not a diagnostic replacement. The app is structured like a production prototype with model artifact checks, background jobs, logging, report export, and version-compatibility controls.
 
@@ -17,26 +17,27 @@ This is an **assistive decision-support pipeline**, not a diagnostic replacement
 ## 2. High-Level Architecture
 
 ## 2.1 Layers
-- **UI layer (Streamlit):** `app.py`, `pages/*`, `components/*`, `assets/styles.css`
+- **UI Workstation layer (React 19 + Vite + Tailwind CSS):** `frontend/src/features/*` (Overview, Upload, Analysis, Results, Dashboard, Chat)
+- **API Server layer (FastAPI):** `breast_cancer_detection/backend/api.py` (Asynchronous job runner, SSE streaming chat, multipart file uploads)
 - **Orchestration layer (LangGraph):** `agents/graph.py`
 - **Inference layer:** `inference/*` (preprocessing, features, model registry, fusion, XAI)
 - **Training layer:** `training/*` (dataset discovery + model training scripts)
-- **LLM layer:** `llm/*` (Ollama client + prompts)
+- **LLM layer:** `llm/*` (OpenRouter client + prompts)
 - **Utilities layer:** `utils/*` (config, validators, storage, logging, model sync, job runner)
-- **Compatibility backend wrappers:** `backend/services/*`, `backend/utils/*` (re-export interfaces)
 
 ## 2.2 End-to-End Runtime Flow
-1. User uploads image (and optional thermal matrix) on **Upload** page.
-2. Upload is validated and persisted under `uploads/`.
+1. User uploads image (and optional thermal matrix) or loads clinical benchmark on **Upload** workstation.
+2. Upload is validated and persisted under `uploads/` via `/api/upload/image`.
 3. A background job runs the **LangGraph diagnosis workflow**.
 4. Workflow stages:
-   - image preprocessing
-   - optional thermal analysis
-   - feature extraction
-   - ensemble diagnosis
-   - explainability packaging
-   - markdown report generation + patient-friendly explanation
-5. Outputs are written into session state and visualized across Analysis/Results/Dashboard.
+   - image preprocessing (adaptive CLAHE)
+   - optional thermal analysis (contra-lateral ΔT extraction)
+   - feature extraction (128 GLCM/LBP + 1408 Conv/ViT embeddings)
+   - ensemble diagnosis (EfficientNet-B4 + ViT-B/16 + XGBoost)
+   - 7-technique explainability synthesis
+   - 3x3 intermediate multi-agent vision output generation
+   - markdown report generation + compassionate 4-pillar patient guide
+5. Outputs are polled asynchronously and visualized across Analysis / Results / Dashboard / Chat.
 6. Report and chat transcript are exportable to files in `outputs/`.
 
 ---
@@ -44,58 +45,64 @@ This is an **assistive decision-support pipeline**, not a diagnostic replacement
 ## 3. Repository and Key Files
 
 - **Root setup**
-  - `pyproject.toml`: package metadata (`breast-cancer-detection`, script `oncovision-init`)
-  - `README.md`: deployment/setup instructions
-  - `scripts/setup_env.ps1`, `scripts/setup_env.sh`: one-command environment bootstrap
-  - `.env`: Ollama generation params (`OLLAMA_NUM_CTX`, `OLLAMA_NUM_PREDICT`)
+  - `pyproject.toml`: package metadata (`breast-cancer-detection`)
+  - `README.md`: deployment and runtime instructions
+  - `scripts/setup_env.ps1`, `scripts/setup_env.sh`: environment bootstrap scripts
+  - `.env`: OpenRouter API key and model configurations (`OPENROUTER_API_KEY`, `OPENROUTER_MODEL`)
 
 - **Core package: `breast_cancer_detection/`**
-  - `app.py`: main Streamlit app, top nav, page routing, session initialization, periodic cleanup
-  - `pages/*.py`: Upload, Analysis, Results, Dashboard, Chat pages
+  - `backend/api.py`: FastAPI server endpoints with CORS, background job polling, SSE streaming
   - `agents/*.py`: workflow nodes + graph assembly
   - `inference/*.py`: model runtime and explainability engine
   - `training/*.py`: model training scripts
-  - `llm/*.py`: Ollama integration + prompt templates
+  - `llm/*.py`: OpenRouter client + prompt templates
   - `utils/*.py`: state/config/IO/logging/validation/background jobs/model artifact sync
   - `models/`: trained model artifacts + manifest + metrics JSON
-  - `assets/styles.css`: UI skinning
+
+- **Frontend Workstation: `frontend/`**
+  - `src/features/overview/`: Workstation hero & 8 core capabilities
+  - `src/features/upload/`: Ingestion studio with benchmark presets and DICOM/radiometric telemetry
+  - `src/features/analysis/`: Synaptic DAG execution progression & 3x3 real-time multi-agent vision gallery
+  - `src/features/results/`: ACR BI-RADS triage, 7-technique XAI suite, 6-stage transformation matrix, 4-pillar patient guide
+  - `src/features/dashboard/`: Schwartz tumor doubling kinetics, thermal ΔT trajectory, calibration curve, cohort distribution
+  - `src/features/chat/`: Clinical AI diagnostic copilot with telemetry ribbon and model selector
 
 ---
 
-## 4. UI and Product Workflow
+## 4. UI and Clinical Product Workflow
 
-## 4.1 Main App (`app.py`)
-- Initializes global session defaults from `utils.config.DEFAULT_STATE`
-- Loads `.env` values into process environment
-- Ensures uploads/outputs directories exist
-- Validates required model artifacts and tries auto-sync from zip if missing
-- Keeps status pills for **Models / LLM / Analysis / Chat**
-- Handles completed background analysis job promotion into canonical session state
-- Performs periodic stale-file cleanup (uploads/outputs older than 24h)
+## 4.1 Screening Ingestion Workstation
+- Upload DICOM/FFDM image + optional thermal matrix with SNR/CNR checks
+- One-click clinical benchmark presets (BI-RADS 4C, BI-RADS 3, BI-RADS 1)
+- Structured clinical intake (Age, Density A-D, View, Quadrant, Symptoms, Genetic risk)
+- Pre-flight diagnostic readiness verification
 
-## 4.2 Pages
-- **01_upload.py**
-  - upload image + optional thermal file
-  - file validation (type, size, shape)
-  - starts async diagnosis graph run
-  - shows preview plots and background-run status
-- **02_analysis.py**
-  - visual pipeline stage display
-  - preprocessing/segmentation preview and pipeline logs
-- **03_results.py**
-  - prediction headline, confidence gauge, reliability, risk score/level
-  - class probability chart
-  - Grad-CAM/SHAP/LIME views
-  - AI markdown report + PDF/MD download
-  - patient-friendly explanation block
-- **04_dashboard.py**
-  - KPI cards, radar, donut, trend/rolling analytics
-  - patient history accumulation (up to 25 points)
-- **05_chat.py**
-  - context-aware assistant using current report
-  - suggested prompts
-  - async response generation
-  - chat transcript persistence and download
+## 4.2 Analysis & Real-Time Agent Vision
+- Synaptic DAG node execution progression with animated pulse beacons
+- Interactive node inspector (Hardware device, GPU kernel, tensor in/out, latency)
+- **3x3 Real-Time Multi-Agent Vision Gallery** displaying intermediate tensor artifacts:
+  - Input Image, Segmentation Mask, ROI Crop, Texture Feature Map, Deep-CNN Embedding Map, Feature Map Overlay, Grad-CAM Heatmap, LIME Superpixel Explanation, and SHAP Attribution Map
+
+## 4.3 Diagnostic Triage & Evidence Localization (Results)
+- Standardized ACR BI-RADS category banner with tentative TNM staging and priority clinical management
+- Multi-Model ensemble concordance breakdown (EfficientNet vs ViT vs XGBoost)
+- Full 7-technique Explainable AI (XAI) suite with dynamic opacity blender and colormap selector
+- Multi-Stage Visual Transformation Matrix (6 Stages)
+- 4-pillar compassionate patient-friendly plain-language guide with speech synthesis and take-home printout
+- 11-section structured clinical markdown report with 1-click PDF/MD export
+
+## 4.4 Longitudinal Analytics Dashboard
+- Tumor Volume Doubling Kinetics (Schwartz Exponential Model with 90d and 180d reference curves)
+- Contra-lateral thermal asymmetry ($\Delta T$) progression trajectory
+- Empirical Model Calibration Reliability Curve (Brier score: 0.042, ECE: 2.1%)
+- Cohort Population Risk Percentile Distribution (Gaussian bell curve)
+- Longitudinal ACR BI-RADS Category Progression step tracker
+
+## 4.5 Clinical AI Diagnostic Copilot
+- Live clinical patient telemetry ribbon (BI-RADS badge, Risk Score, Thermal ΔT, Concordance)
+- Model selection (Llama 3.1 8B, Claude 3.5 Sonnet, GPT-4o, Mistral Large)
+- Categorized clinical query prompts (Diagnostic Triage, Multimodal Evidence, Protocols, Patient Counseling)
+- Grounding context toggle, audio speech readback, and transcript export
 
 ---
 
@@ -197,12 +204,12 @@ Explainability is integrated in both:
 
 ## 8. LLM Integration
 
-## 8.1 Client (`llm/ollama_client.py`)
-- Uses Ollama with host discovery and model availability checks
-- Primary model: `mistral:latest`
-- Fallback model: `llama3:latest`
-- Supports both non-streamed and streamed generation
-- Returns graceful fallback text when unreachable
+## 8.1 Client (`llm/openrouter_client.py`)
+- Uses OpenRouter API with key discovery from `.env` or system environment
+- Primary model: `meta-llama/llama-3.1-8b-instruct`
+- Fallback model: `mistralai/mistral-7b-instruct`
+- Supports both non-streamed (`generate`) and streamed (`stream`) token generation
+- Returns graceful fallback text when unreachable or during network interruption
 
 ## 8.2 Prompting (`llm/prompts.py`)
 - Report prompt asks for 11-section clinically structured markdown
@@ -293,7 +300,7 @@ Support breast cancer screening triage by combining image morphology and thermal
 1. Provide end-to-end inference from upload to report.
 2. Fuse multi-model evidence (CNN + ViT + thermal XGBoost).
 3. Improve trust with explainability and reliability indicators.
-4. Keep workflow practical through Streamlit UI, exportable reports, and clinician/patient-friendly explanations.
+4. Keep workflow practical through modern React clinical workstation, exportable reports, and clinician/patient-friendly explanations.
 
 **Clarity assessment:**  
 Strong overall objective clarity. The project consistently frames itself as assistive and not definitive diagnosis, reflected in prompts, UI language, and fallback messaging.
@@ -330,7 +337,7 @@ Model choices are coherent for multi-modal clinical AI prototype design. The com
 **Correctness indicators from implementation:**
 - Full state schema defined and carried through graph nodes.
 - Conditional thermal path handling avoids hard-failure when modality is missing.
-- Background job isolation avoids Streamlit UI blocking.
+- Background job isolation avoids web client blocking.
 - Consistent logging and pipeline audit traces across nodes.
 - Safe model loading with compatibility checks and artifact integrity verification.
 
@@ -404,8 +411,9 @@ The project combines:
 - **DL/CV:** torch, torchvision, timm, opencv, scikit-image, albumentations
 - **Classical ML:** scikit-learn, xgboost, lightgbm
 - **XAI:** grad-cam, shap, lime
-- **LLM stack:** langgraph/langchain + ollama
-- **Frontend:** streamlit, plotly, matplotlib/seaborn
+- **LLM stack:** langgraph/langchain + OpenRouter API
+- **API Server:** fastapi, uvicorn, python-multipart
+- **Frontend Workstation:** React 19, Vite, Tailwind CSS, Lucide Icons, Recharts
 - **Reporting:** reportlab + markdown
 
 Python target in `pyproject.toml`: `>=3.10`.

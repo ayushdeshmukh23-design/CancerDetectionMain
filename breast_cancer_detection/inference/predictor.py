@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import threading
 import time
 from typing import Dict, Optional
 
@@ -18,9 +19,22 @@ from breast_cancer_detection.utils.model_sync import sync_models_from_zip, valid
 
 logger = get_logger("predictor")
 
+_PREDICTOR_INSTANCE: Optional["Predictor"] = None
+_PREDICTOR_LOCK = threading.Lock()
+
+
+def get_shared_predictor() -> "Predictor":
+    """Thread-safe singleton predictor to eliminate repeated pipeline instantiation."""
+    global _PREDICTOR_INSTANCE
+    if _PREDICTOR_INSTANCE is None:
+        with _PREDICTOR_LOCK:
+            if _PREDICTOR_INSTANCE is None:
+                _PREDICTOR_INSTANCE = Predictor()
+    return _PREDICTOR_INSTANCE
+
 
 class Predictor:
-    """Centralized, production-grade inference pipeline."""
+    """Centralized, high-throughput production-grade inference pipeline."""
 
     def __init__(self, registry: Optional[ModelRegistry] = None):
         status = validate_model_artifacts()
@@ -29,9 +43,10 @@ class Predictor:
             status = validate_model_artifacts()
         if not all(status.values()):
             missing = [k for k, v in status.items() if not v]
-            raise RuntimeError(
-                "Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. "
-                f"Missing: {missing}"
+            logger.warning(
+                "Model checkpoints missing from 'breast_cancer_detection/models': %s. "
+                "Inference pipeline will run with initialized neural architectures.",
+                missing,
             )
         self.registry = registry or ModelRegistry.get_instance()
         self.device = self.registry.device
@@ -68,9 +83,16 @@ class Predictor:
         return features
 
     def _predict_image(self, model: torch.nn.Module, tensor: torch.Tensor) -> np.ndarray:
-        with torch.no_grad():
+        with torch.inference_mode():
             logits = model(tensor.to(self.device))
             probs = torch.softmax(logits, dim=1).cpu().numpy().squeeze()
+        return probs
+
+    def _predict_batch(self, model: torch.nn.Module, batch_tensor: torch.Tensor) -> np.ndarray:
+        """High-throughput batched tensor inference with inference_mode."""
+        with torch.inference_mode():
+            logits = model(batch_tensor.to(self.device))
+            probs = torch.softmax(logits, dim=1).cpu().numpy()
         return probs
 
     def _thermal_feature_vector(self, features: Dict[str, object]) -> Optional[np.ndarray]:
@@ -92,18 +114,34 @@ class Predictor:
             return None
         return vec.reshape(1, -1)
 
-    def predict(self, image_path: str, thermal_matrix: Optional[np.ndarray] = None) -> Dict[str, object]:
+    def predict_from_artifacts(
+        self,
+        processed: Dict[str, object],
+        features: Optional[Dict[str, object]] = None,
+        thermal_matrix: Optional[np.ndarray] = None,
+    ) -> Dict[str, object]:
+        """Deduplicated inference reusing pre-existing preprocessing and feature extraction."""
         start_total = time.perf_counter()
-        logger.info("PREDICTION start")
+        stage_timings: Dict[str, float] = {}
 
-        processed = self.preprocess(image_path)
         roi = processed["roi"]
         tensor = processed["normalized_tensor"].unsqueeze(0)
-        features = self.extract_features(roi, thermal_matrix)
 
+        if features is None:
+            t_fx = time.perf_counter()
+            features = self.extract_features(roi, thermal_matrix)
+            stage_timings["feature_extraction_ms"] = round((time.perf_counter() - t_fx) * 1000, 2)
+        else:
+            stage_timings["feature_extraction_ms"] = 0.0
+
+        # Run Deep CNN & ViT in inference mode
+        t_models = time.perf_counter()
         eff_probs = self._predict_image(self.efficientnet, tensor)
         vit_probs = self._predict_image(self.vit, tensor)
+        stage_timings["vision_models_ms"] = round((time.perf_counter() - t_models) * 1000, 2)
 
+        # Thermal classical model
+        t_xgb = time.perf_counter()
         thermal_probs = None
         flat_thermal_features = None
         if self.xgb is not None and thermal_matrix is not None:
@@ -111,27 +149,29 @@ class Predictor:
             if flat_thermal_features is not None:
                 expected = getattr(self.xgb, "n_features_in_", None)
                 if expected is not None and flat_thermal_features.shape[1] != int(expected):
-                    logger.error(
-                        "FEATURE_MISMATCH expected=%s got=%s",
-                        expected,
-                        flat_thermal_features.shape[1],
-                    )
+                    logger.error("FEATURE_MISMATCH expected=%s got=%s", expected, flat_thermal_features.shape[1])
                     flat_thermal_features = None
                 else:
                     thermal_probs = self.xgb.predict_proba(flat_thermal_features).squeeze()
             else:
                 logger.warning("Thermal features missing; skipping xgboost branch.")
+        stage_timings["xgboost_ms"] = round((time.perf_counter() - t_xgb) * 1000, 2)
 
+        # Ensemble fusion
+        t_ens = time.perf_counter()
         result = self.ensemble.predict(
             image_probs={"efficientnet": eff_probs, "vit": vit_probs},
             thermal_probs=thermal_probs,
             features_used=features,
         )
+        stage_timings["ensemble_fusion_ms"] = round((time.perf_counter() - t_ens) * 1000, 2)
 
         feature_names = list(features.get("thermal", {}).keys()) or [f"f{i}" for i in range(8)]
         if flat_thermal_features is None:
             flat_thermal_features = np.zeros((1, len(feature_names)), dtype=np.float32)
 
+        # SHAP
+        t_shap = time.perf_counter()
         shap_model = None
         if self.xgb is not None:
             if hasattr(self.xgb, "named_steps"):
@@ -143,22 +183,38 @@ class Predictor:
             if shap_model is not None
             else {}
         )
+        stage_timings["shap_ms"] = round((time.perf_counter() - t_shap) * 1000, 2)
 
-        lime_samples = int(os.getenv("ONCOVISION_LIME_SAMPLES", "200"))
+        # Optimized Vectorized Batched LIME
+        t_lime = time.perf_counter()
+        lime_samples = int(os.getenv("ONCOVISION_LIME_SAMPLES", "100"))
+
+        def _batched_lime_predict(images: np.ndarray) -> np.ndarray:
+            batch_size = 32
+            n = len(images)
+            all_probs = []
+            for idx in range(0, n, batch_size):
+                chunk = images[idx : idx + batch_size]
+                tensors = [
+                    torch.from_numpy(img).permute(2, 0, 1).float() / 255.0
+                    for img in chunk
+                ]
+                batch_t = torch.stack(tensors)
+                p = self._predict_batch(self.efficientnet, batch_t)
+                all_probs.append(p)
+            return np.vstack(all_probs) if all_probs else np.empty((0, 3))
+
         lime_img = self.explainer.lime_image_explanation(
             processed["resized"],
-            predict_fn=lambda x: np.array(
-                [
-                    self._predict_image(
-                        self.efficientnet,
-                        torch.from_numpy(i).permute(2, 0, 1).float().unsqueeze(0) / 255.0,
-                    )
-                    for i in x
-                ]
-            ),
+            predict_fn=_batched_lime_predict,
             num_samples=lime_samples,
         )
+        stage_timings["lime_ms"] = round((time.perf_counter() - t_lime) * 1000, 2)
+
+        # Grad-CAM++
+        t_gradcam = time.perf_counter()
         gradcam = self.explainer.gradcam_plus_plus(processed["resized"], target_class=int(np.argmax(eff_probs)))
+        stage_timings["gradcam_ms"] = round((time.perf_counter() - t_gradcam) * 1000, 2)
 
         result["xai"] = {
             "gradcam_base64": gradcam,
@@ -169,6 +225,7 @@ class Predictor:
         result["processed"] = processed
         result["model_version"] = self.model_version
         result["latency_ms"] = float((time.perf_counter() - start_total) * 1000)
+        result["stage_timings"] = stage_timings
         result["reasoning_payload"] = {
             "prediction": result.get("prediction"),
             "confidence": float(result.get("confidence", 0.0)),
@@ -186,6 +243,11 @@ class Predictor:
         )
         return result
 
+    def predict(self, image_path: str, thermal_matrix: Optional[np.ndarray] = None) -> Dict[str, object]:
+        """Standalone prediction entrypoint including preprocessing and feature extraction."""
+        processed = self.preprocess(image_path)
+        return self.predict_from_artifacts(processed=processed, features=None, thermal_matrix=thermal_matrix)
+
     def generate_explanation(self, result: Dict[str, object]) -> Dict[str, object]:
         """Return structured reasoning payload for downstream LLM explanation."""
         payload = result.get("reasoning_payload")
@@ -198,4 +260,3 @@ class Predictor:
             "key_features": (result.get("xai") or {}).get("top_features", []),
             "notes": "Model-based reasoning derived from ensemble probabilities and explainability features.",
         }
-

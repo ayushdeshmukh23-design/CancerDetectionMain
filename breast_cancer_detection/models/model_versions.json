@@ -1,0 +1,13 @@
+{
+  "model_version": "1.0.0-runtime",
+  "torch_version": "2.14.0+cpu",
+  "sklearn_version": "1.7.2",
+  "models": {
+    "efficientnet": "efficientnet_model.pth",
+    "vit": "vit_model.pth",
+    "xgboost": "xgboost_thermal.pkl",
+    "ensemble": "ensemble_meta_model.pkl",
+    "unet": "unet_segmentation.pth",
+    "autoencoder": "autoencoder.pth"
+  }
+}

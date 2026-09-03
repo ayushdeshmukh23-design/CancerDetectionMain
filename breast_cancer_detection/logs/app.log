@@ -785,3 +785,320 @@ tornado.websocket.WebSocketClosedError
 [2026-04-18 01:13:00,637] [INFO] [app] ANALYSIS_JOB done | has_result=True
 [2026-04-18 01:13:00,640] [INFO] [app] ANALYSIS_JOB state promoted | prediction=Malignant
 [2026-04-18 01:13:07,553] [INFO] [file_store] Output file written | path=D:\VS Codes\SeminarProject\breast_cancer_detection\outputs\8429408c-b66c-4158-b0a6-a6154dcb99a4_chat_history.txt size=94
+[2026-09-03 14:48:35,028] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 14:49:17,624] [INFO] [file_store] Output file written | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\outputs\0edc3878-12a9-49ae-a8b9-9457256f7498_oncovision_report.md size=295
+[2026-09-03 14:49:17,630] [INFO] [file_store] Output file written | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\outputs\5bada189-1d8b-4bfa-bc42-9ce18020411f_oncovision_report.pdf size=1598
+[2026-09-03 14:49:24,516] [INFO] [file_store] Output file written | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\outputs\15b87ffc-d2cd-4beb-8a5d-d6e7af1caf04_chat_history.txt size=0
+[2026-09-03 15:42:43,930] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 15:42:59,110] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 16:07:09,074] [INFO] [file_store] Output file written | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\outputs\7584c554-b46c-41f3-b636-930be341ab69_chat_history.txt size=1007
+[2026-09-03 16:07:20,656] [INFO] [file_store] Output file written | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\outputs\b512382f-54f5-4da5-bb48-7c1519cc5372_oncovision_report.pdf size=1598
+[2026-09-03 16:10:21,212] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 16:10:48,445] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 16:33:52,189] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 16:39:52,141] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 18:07:55,168] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 18:49:03,327] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 18:49:30,943] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 18:50:13,312] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:15:41,849] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:17:16,974] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:17:33,441] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:19:16,133] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:19:31,160] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:19:31,735] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_d09866fa-a9f4-4663-aef2-2e580a45acd2_test_upload.png size=16
+[2026-09-03 19:19:58,704] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_0dc8621c-9ac7-4e2a-a3de-cc5f7cf811e3_test_upload.png size=16
+[2026-09-03 19:22:17,841] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_d300e138-57f8-4180-8911-af26399fe023_test_scan.png size=760
+[2026-09-03 19:23:45,114] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\thermal_23fe59c6-0ee0-4197-9bf8-8f2cb13770bc_test_thermal.csv size=44
+[2026-09-03 19:24:53,557] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_b39d8eee-a991-494a-b23d-31139f6c4212_Screenshot2026-08-12193548.png size=35915
+[2026-09-03 19:25:04,091] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_b39d8eee-a991-494a-b23d-31139f6c4212_Screenshot2026-08-12193548.png
+[2026-09-03 19:25:05,020] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Model manifest not found: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\model_versions.json
+[2026-09-03 19:25:06,027] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 19:43:58,914] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:44:27,188] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:51:45,023] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 19:52:57,590] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:03:25,460] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_0dc8621c-9ac7-4e2a-a3de-cc5f7cf811e3_test_upload.png
+[2026-09-03 20:03:25,461] [ERROR] [image_analyzer_agent] Agent image_analyzer_node failed: Unable to load image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_0dc8621c-9ac7-4e2a-a3de-cc5f7cf811e3_test_upload.png
+[2026-09-03 20:03:25,463] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Model manifest not found: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\model_versions.json
+[2026-09-03 20:03:26,408] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:03:40,074] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:04:41,908] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:05:01,261] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:06:03,899] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:06:29,600] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:06:42,993] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:07:32,582] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:07:34,204] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:07:35,042] [WARNING] [api] FastAPI lifespan warm-up notice: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:07:39,376] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_0dc8621c-9ac7-4e2a-a3de-cc5f7cf811e3_test_upload.png
+[2026-09-03 20:07:39,376] [ERROR] [image_analyzer_agent] Agent image_analyzer_node failed: Unable to load image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_0dc8621c-9ac7-4e2a-a3de-cc5f7cf811e3_test_upload.png
+[2026-09-03 20:07:39,378] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Model manifest not found: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\model_versions.json
+[2026-09-03 20:07:40,300] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:08:07,302] [INFO] [background_jobs] Background job finished | job_id=analysis-7fd39cc0 duration=27.93s
+[2026-09-03 20:10:10,800] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_782251db-ed1e-4992-9fb5-949b989efbda_benchmark_mammogram.png size=4500
+[2026-09-03 20:10:10,814] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_782251db-ed1e-4992-9fb5-949b989efbda_benchmark_mammogram.png
+[2026-09-03 20:10:11,060] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Model manifest not found: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\model_versions.json
+[2026-09-03 20:10:12,092] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:10:23,374] [INFO] [background_jobs] Background job finished | job_id=analysis-b006deed duration=12.56s
+[2026-09-03 20:10:59,358] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:12:35,348] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:12:42,079] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:12:43,698] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:12:44,541] [WARNING] [api] FastAPI lifespan warm-up notice: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:13:00,541] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:13:07,266] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:13:08,980] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:13:09,814] [WARNING] [api] FastAPI lifespan warm-up notice: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:13:22,526] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_74202ce5-3e12-4283-8929-2cfca5aa50f2_benchmark_mammogram.png size=4500
+[2026-09-03 20:13:22,552] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_74202ce5-3e12-4283-8929-2cfca5aa50f2_benchmark_mammogram.png
+[2026-09-03 20:13:22,759] [ERROR] [image_analyzer_agent] Agent feature_extractor_node failed: Model manifest not found: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\model_versions.json
+[2026-09-03 20:13:23,664] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: Required model artifacts are missing. Expected trained models in 'breast_cancer_detection/models'. Missing: ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']
+[2026-09-03 20:16:30,413] [INFO] [background_jobs] Background job finished | job_id=analysis-edfb8375 duration=187.86s
+[2026-09-03 20:17:42,858] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:17:51,688] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:17:54,157] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:17:55,063] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler', 'manifest']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:17:55,074] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:17:55,075] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.9
+[2026-09-03 20:17:55,075] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:17:55,227] [INFO] [model_loader] Loading model start | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-09-03 20:17:55,242] [ERROR] [model_loader] Autoencoder loading failed: [Errno 2] No such file or directory: 'D:\\VS Codes\\CancerDetectionProject\\CancerDetectionProject-\\breast_cancer_detection\\models\\autoencoder.pth'
+Traceback (most recent call last):
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\inference\model_loader.py", line 86, in load_autoencoder_model
+    checkpoint = torch.load(path, map_location=device)
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\VS Codes\\CancerDetectionProject\\CancerDetectionProject-\\breast_cancer_detection\\models\\autoencoder.pth'
+[2026-09-03 20:17:55,272] [WARNING] [api] FastAPI lifespan warm-up notice: Failed to load autoencoder model from D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth: [Errno 2] No such file or directory: 'D:\\VS Codes\\CancerDetectionProject\\CancerDetectionProject-\\breast_cancer_detection\\models\\autoencoder.pth'
+[2026-09-03 20:18:08,838] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:18:12,744] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:18:12,745] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:18:12,746] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:18:12,746] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:18:13,034] [INFO] [model_loader] Loading model start | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth device=cpu
+[2026-09-03 20:18:13,039] [ERROR] [model_loader] Autoencoder loading failed: [Errno 2] No such file or directory: 'D:\\VS Codes\\CancerDetectionProject\\CancerDetectionProject-\\breast_cancer_detection\\models\\autoencoder.pth'
+Traceback (most recent call last):
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\inference\model_loader.py", line 86, in load_autoencoder_model
+    checkpoint = torch.load(path, map_location=device)
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\.venv\lib\site-packages\torch\serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\VS Codes\\CancerDetectionProject\\CancerDetectionProject-\\breast_cancer_detection\\models\\autoencoder.pth'
+[2026-09-03 20:18:52,943] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:19:01,439] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:19:03,573] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:19:04,539] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:19:04,540] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:19:04,541] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:19:04,541] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:19:04,782] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:19:04,810] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:19:05,457] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:19:05,830] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:19:07,276] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:19:07,277] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:19:07,645] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:19:14,678] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:19:18,526] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:19:18,528] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:19:18,528] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.5
+[2026-09-03 20:19:18,528] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:19:18,819] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:19:18,821] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:19:19,374] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:19:19,915] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:19:21,333] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:19:21,334] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:19:35,619] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:19:43,970] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:19:45,699] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:19:46,555] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:19:46,557] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:19:46,557] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:19:46,557] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:19:46,702] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:19:46,703] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:19:47,040] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:19:47,369] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:19:48,241] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:19:48,241] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:19:48,534] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:19:50,053] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_52b97627-4b83-48ee-892e-02f46ef5d2d6_benchmark_mammogram.png size=4500
+[2026-09-03 20:19:50,063] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_52b97627-4b83-48ee-892e-02f46ef5d2d6_benchmark_mammogram.png
+[2026-09-03 20:19:57,578] [ERROR] [image_analyzer_agent] Agent diagnosis_node failed: BaseCAM.__call__() missing 1 required positional argument: 'targets'
+[2026-09-03 20:20:07,807] [INFO] [background_jobs] Background job finished | job_id=analysis-186bd764 duration=17.75s
+[2026-09-03 20:20:50,757] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:20:57,623] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:20:59,288] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:21:00,127] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:21:00,127] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:21:00,129] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:21:00,129] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:21:00,254] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:21:00,256] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:21:00,560] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:21:00,888] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:21:01,798] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:21:01,798] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:21:02,094] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:21:22,989] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:21:29,808] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:21:31,415] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:21:32,258] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:21:32,259] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:21:32,260] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:21:32,260] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:21:32,401] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:21:32,402] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:21:32,725] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:21:33,069] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:21:33,993] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:21:33,993] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:21:34,301] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:21:48,655] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_016cd504-8866-4d0b-b24a-e5c56d9f905b_benchmark_mammogram.png size=4500
+[2026-09-03 20:21:48,683] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_016cd504-8866-4d0b-b24a-e5c56d9f905b_benchmark_mammogram.png
+[2026-09-03 20:21:56,302] [INFO] [predictor] PREDICTION done | prediction=Benign confidence=0.4001 risk_score=29.26 latency_ms=7210.0
+[2026-09-03 20:21:56,304] [ERROR] [image_analyzer_agent] Agent explainability_node failed: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+[2026-09-03 20:23:16,637] [INFO] [background_jobs] Background job finished | job_id=analysis-bc42837e duration=87.96s
+[2026-09-03 20:23:44,147] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:23:51,008] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:23:52,628] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:23:53,470] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:23:53,471] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:23:53,471] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.5
+[2026-09-03 20:23:53,472] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:23:53,614] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:23:53,615] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:23:53,942] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:23:54,253] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:23:55,198] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:23:55,198] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:23:55,495] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:24:10,058] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:24:16,875] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:24:18,489] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:24:19,320] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:24:19,322] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:24:19,322] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:24:19,322] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:24:19,449] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:24:19,450] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:24:19,762] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:24:20,109] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:24:21,115] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:24:21,115] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:24:21,440] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:24:35,926] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_13f00963-d102-407d-983d-18ec4dbabbc8_benchmark_mammogram.png size=4500
+[2026-09-03 20:24:35,953] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_13f00963-d102-407d-983d-18ec4dbabbc8_benchmark_mammogram.png
+[2026-09-03 20:24:43,296] [INFO] [predictor] PREDICTION done | prediction=Normal confidence=0.3531 risk_score=29.61 latency_ms=6902.6
+[2026-09-03 20:26:11,237] [INFO] [background_jobs] Background job finished | job_id=analysis-c265e4f4 duration=95.29s
+[2026-09-03 20:47:22,944] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 20:48:53,999] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:48:55,590] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:48:56,436] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:48:56,438] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:48:56,438] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.3
+[2026-09-03 20:48:56,438] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:48:56,556] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:48:56,556] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:48:56,842] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:48:57,134] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:48:57,952] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:48:57,953] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:48:58,218] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:50:11,310] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 20:50:12,860] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 20:50:13,662] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 20:50:13,664] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 20:50:13,664] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 20:50:13,664] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 20:50:13,794] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 20:50:13,796] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 20:50:14,103] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 20:50:14,412] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 20:50:15,262] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 20:50:15,263] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 20:50:15,566] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 20:51:22,984] [INFO] [file_store] Uploaded file persisted | path=D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_d196283e-7c53-4b03-a008-e55078248d5b_Screenshot2026-08-12193548.png size=35915
+[2026-09-03 20:51:27,874] [INFO] [preprocessor] Preprocessing image: D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\uploads\image_d196283e-7c53-4b03-a008-e55078248d5b_Screenshot2026-08-12193548.png
+[2026-09-03 20:51:37,445] [INFO] [predictor] PREDICTION done | prediction=Benign confidence=0.3976 risk_score=32.24 latency_ms=8833.9
+[2026-09-03 20:52:16,508] [INFO] [background_jobs] Background job finished | job_id=analysis-38d8e899 duration=48.64s
+[2026-09-03 22:01:42,669] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 22:01:49,975] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 22:01:51,604] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 22:01:52,440] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 22:01:52,442] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 22:01:52,442] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 22:01:52,442] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 22:01:52,570] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 22:01:52,571] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 22:01:52,878] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 22:01:53,201] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 22:01:54,076] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 22:01:54,076] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 22:01:54,396] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 22:02:02,732] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 22:02:09,709] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 22:02:11,323] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 22:02:12,220] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 22:02:12,222] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 22:02:12,222] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 22:02:12,222] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 22:02:12,351] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 22:02:12,352] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 22:02:12,672] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 22:02:13,006] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 22:02:13,884] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 22:02:13,884] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 22:02:14,187] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 22:02:16,601] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 22:02:23,520] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 22:02:25,151] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 22:02:26,003] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 22:02:26,004] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 22:02:26,004] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 22:02:26,004] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 22:02:26,132] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 22:02:26,133] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 22:02:26,445] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 22:02:26,774] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 22:02:27,650] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 22:02:27,650] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 22:02:27,959] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 22:02:36,262] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 22:02:43,224] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 22:02:44,861] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 22:02:45,756] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 22:02:45,757] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 22:02:45,757] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 22:02:45,757] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 22:02:45,886] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 22:02:45,887] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 22:02:46,200] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 22:02:46,697] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 22:02:48,156] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 22:02:48,157] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 22:02:48,541] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 22:03:47,495] [INFO] [api] FastAPI lifespan: shutdown complete.
+[2026-09-03 22:03:54,739] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
+[2026-09-03 22:03:56,373] [INFO] [api] FastAPI lifespan starting: warming up models and compiled graph...
+[2026-09-03 22:03:57,247] [WARNING] [predictor] Model checkpoints missing from 'breast_cancer_detection/models': ['efficientnet', 'vit', 'xgboost', 'ensemble', 'unet', 'autoencoder', 'scaler']. Inference pipeline will run with initialized neural architectures.
+[2026-09-03 22:03:57,248] [INFO] [model_loader] Model preflight passed | model_version=1.0.0-runtime sklearn=1.7.2 torch=2.14.0+cpu
+[2026-09-03 22:03:57,249] [INFO] [model_registry] MODEL_LOAD preflight ok | latency_ms=0.4
+[2026-09-03 22:03:57,249] [INFO] [model_registry] MODEL_LOAD autoencoder
+[2026-09-03 22:03:57,376] [INFO] [model_loader] Autoencoder checkpoint not found at D:\VS Codes\CancerDetectionProject\CancerDetectionProject-\breast_cancer_detection\models\autoencoder.pth; using initialized architecture.
+[2026-09-03 22:03:57,377] [INFO] [model_registry] MODEL_LOAD efficientnet_backbone
+[2026-09-03 22:03:57,707] [INFO] [model_registry] MODEL_LOAD efficientnet_classifier
+[2026-09-03 22:03:58,055] [INFO] [model_registry] MODEL_LOAD vit_classifier
+[2026-09-03 22:03:58,947] [INFO] [model_registry] MODEL_LOAD ensemble
+[2026-09-03 22:03:58,947] [INFO] [model_registry] MODEL_LOAD explainability_engine
+[2026-09-03 22:03:59,257] [INFO] [api] FastAPI lifespan: Warm-up complete.
+[2026-09-03 22:07:46,184] [INFO] [runtime] Runtime initialized | torch=2.14.0+cpu sklearn=1.7.2 device=cpu
